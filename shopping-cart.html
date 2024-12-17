@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- шапка -->
+	<nav class="navbar" id="header">
+		<div class="container">
+			<div class="navbar__wrapper">
+				<a class="navbar-brand" href="#">
+					<img src="img/header/logo.png" alt="лого forra">
+				</a>
+				<div class="navbar__right">
+					<ul class="navbar-nav align-items-center flex-row">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Академия</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Основатель</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Продукты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Цены</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Магазин</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+					<a href="tel:88004567819" class="navbar-phone d-lg-none">8 800 456 78 19</a>
+					<button class="navbar-burger d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#burger"
+						aria-controls="offcanvasExample">
+						<svg width="63" height="15" viewBox="0 0 63 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.6216 7.5C13.6216 11.366 10.5723 14.5 6.81081 14.5C3.0493 14.5 0 11.366 0 7.5C0 3.63401 3.0493 0.5 6.81081 0.5C10.5723 0.5 13.6216 3.63401 13.6216 7.5Z"
+								fill="black" />
+							<path
+								d="M38.3108 7.5C38.3108 11.366 35.2615 14.5 31.5 14.5C27.7385 14.5 24.6892 11.366 24.6892 7.5C24.6892 3.63401 27.7385 0.5 31.5 0.5C35.2615 0.5 38.3108 3.63401 38.3108 7.5Z"
+								fill="black" />
+							<path
+								d="M63 7.5C63 11.366 59.9507 14.5 56.1892 14.5C52.4277 14.5 49.3784 11.366 49.3784 7.5C49.3784 3.63401 52.4277 0.5 56.1892 0.5C59.9507 0.5 63 3.63401 63 7.5Z"
+								fill="black" />
+						</svg>
+					</button>
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="burger" aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<button type="button" class="navbar-offcanvas__close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+								<svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L17 16.5L2 31" stroke="white" stroke-width="3" />
+								</svg>
+							</button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Академию</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Основателя</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Продукты и услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Тарифы и цены</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Новости</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+							<div class="navbar-offcanvas__contacts">
+								<a href="tel:88004567819" class="navbar-offcanvas__phone">8 800 456 78 19</a>
+								<p class="navbar-offcanvas__address">Пенза, ул. Терновского 220, к. 4</p>
+							</div>
+							<a href="#" class="navbar-offcanvas__btn">связаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+		<nav aria-label="breadcrumb" class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Корзина</li>
+				</ol>
+			</div>
+		</nav>
+
+		<section class="shopping-cart">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="shopping-cart__block">
+							<h1 class="section-title">Моя корзина</h1>
+							<div class="shopping-cart__group">
+								<div class="shopping-cart__items">
+									<div class="shopping-cart-item">
+										<p class="shopping-cart-item__name">Блок «База знаний»</p>
+										<div class="shopping-cart-item__price">
+											<p>20 000 ₽</p>
+											<button>
+												<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M4.125 26C3.36875 26 2.72158 25.7174 2.1835 25.1521C1.64542 24.5868 1.37592 23.9065 1.375 23.1111V4.33333H0V1.44444H6.875V0H15.125V1.44444H22V4.33333H20.625V23.1111C20.625 23.9056 20.356 24.5859 19.8179 25.1521C19.2798 25.7183 18.6322 26.001 17.875 26H4.125ZM17.875 4.33333H4.125V23.1111H17.875V4.33333ZM6.875 20.2222H9.625V7.22222H6.875V20.2222ZM12.375 20.2222H15.125V7.22222H12.375V20.2222Z"
+														fill="#D9000F" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="shopping-cart-item">
+										<p class="shopping-cart-item__name">Секция «Структура РПК»</p>
+										<div class="shopping-cart-item__price">
+											<p>20 000 ₽</p>
+											<button>
+												<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M4.125 26C3.36875 26 2.72158 25.7174 2.1835 25.1521C1.64542 24.5868 1.37592 23.9065 1.375 23.1111V4.33333H0V1.44444H6.875V0H15.125V1.44444H22V4.33333H20.625V23.1111C20.625 23.9056 20.356 24.5859 19.8179 25.1521C19.2798 25.7183 18.6322 26.001 17.875 26H4.125ZM17.875 4.33333H4.125V23.1111H17.875V4.33333ZM6.875 20.2222H9.625V7.22222H6.875V20.2222ZM12.375 20.2222H15.125V7.22222H12.375V20.2222Z"
+														fill="#D9000F" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="shopping-cart-item">
+										<p class="shopping-cart-item__name">Блок «Продажи»</p>
+										<div class="shopping-cart-item__price">
+											<p>20 000 ₽</p>
+											<button>
+												<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M4.125 26C3.36875 26 2.72158 25.7174 2.1835 25.1521C1.64542 24.5868 1.37592 23.9065 1.375 23.1111V4.33333H0V1.44444H6.875V0H15.125V1.44444H22V4.33333H20.625V23.1111C20.625 23.9056 20.356 24.5859 19.8179 25.1521C19.2798 25.7183 18.6322 26.001 17.875 26H4.125ZM17.875 4.33333H4.125V23.1111H17.875V4.33333ZM6.875 20.2222H9.625V7.22222H6.875V20.2222ZM12.375 20.2222H15.125V7.22222H12.375V20.2222Z"
+														fill="#D9000F" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="shopping-cart-order">
+									<div class="shopping-cart-order__top">
+										<div class="shopping-cart-order__title">
+											<svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M35.9217 6.76348L31.7348 20.7469C31.4217 21.7427 30.6 22.4066 29.6217 22.4066H13.4609C12.5217 22.4066 11.6217 21.7842 11.3087 20.8714L5.12609 3.3195H1.56522C0.704348 3.3195 0 2.57261 0 1.65975C0 0.746888 0.704348 0 1.56522 0H6.22174C6.88696 0 7.47391 0.456431 7.7087 1.12033L14.087 19.0871H28.9565L32.2826 7.88382H13.8522C12.9913 7.88382 12.287 7.13693 12.287 6.22407C12.287 5.3112 12.9913 4.56431 13.8522 4.56431H34.4348C34.9435 4.56431 35.413 4.85477 35.687 5.26971C36 5.68465 36.0783 6.26556 35.9217 6.76348ZM14.2435 24.6058C13.5783 24.6058 12.913 24.8963 12.4435 25.3942C11.9739 25.8921 11.7 26.5975 11.7 27.3029C11.7 28.0083 11.9739 28.7137 12.4435 29.2116C12.913 29.7095 13.5783 30 14.2435 30C14.9087 30 15.5739 29.7095 16.0435 29.2116C16.513 28.7137 16.787 28.0083 16.787 27.3029C16.787 26.5975 16.513 25.8921 16.0435 25.3942C15.5739 24.8963 14.9087 24.6058 14.2435 24.6058ZM28.2913 24.6058C27.6261 24.6058 26.9609 24.8963 26.4913 25.3942C26.0217 25.8921 25.7478 26.5975 25.7478 27.3029C25.7478 28.0083 26.0217 28.7137 26.4913 29.2116C26.9609 29.7095 27.6261 30 28.2913 30C28.9565 30 29.6217 29.7095 30.0913 29.2116C30.5609 28.7137 30.8348 28.0083 30.8348 27.3029C30.8348 26.5975 30.5609 25.8921 30.0913 25.3942C29.6217 24.8963 28.9565 24.6058 28.2913 24.6058Z"
+													fill="#D9000F" />
+											</svg>
+											<p>Ваш заказ</p>
+										</div>
+										<ul class="shopping-cart-order__list">
+											<li>База знаний</li>
+											<li>Структура рпк</li>
+											<li>Продажи</li>
+										</ul>
+									</div>
+									<div class="shopping-cart-order__bottom">
+										<p class="shopping-cart-order__name">Итоговая стоимость</p>
+										<p class="shopping-cart-order__price">60 000 ₽</p>
+									</div>
+								</div>
+								<div class="shopping-cart-payment">
+									<div class="shopping-cart-payment__header">
+										<p>ОПЛАТИТЬ ТОВАР МОЖНО СЛЕДУЮЩИМИ СПОСОБАМИ:</p>
+									</div>
+									<div class="shopping-cart-payment__cards">
+										<div class="shopping-cart-payment__card shopping-cart-payment__card_one">
+											<div class="shopping-cart-payment__group">
+												<div class="shopping-cart-payment__icon box">
+													<img src="img/shopping-cart/icon-1.svg" alt="фото">
+												</div>
+												<p>Картой на сайте</p>
+											</div>
+											<button class="btn-1 shopping-cart-payment__btn">оплатить по карте</button>
+										</div>
+										<div class="shopping-cart-payment__card shopping-cart-payment__card_two">
+											<div class="shopping-cart-payment__group">
+												<div class="shopping-cart-payment__icon box">
+													<img src="img/shopping-cart/icon-2.svg" alt="фото">
+												</div>
+												<p>БЕЗНАЛИЧНАЯ ОПЛАТА</p>
+											</div>
+											<button class="btn-1 shopping-cart-payment__btn">безналичная оплата</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="shopping-cart-form">
+								<div class="shopping-cart-form__wrapper">
+									<div class="shopping-cart-form__text">
+										<p><strong>Для оформления безналичной оплаты</strong> через нашего администратора, пожалуйста,
+											заполните поля.</p>
+										<p>Мы сформируем заявку, и наш администратор отправит на указанную вами почту все необходимые данные
+											для оплаты покупки.</p>
+									</div>
+									<div class="shopping-cart-form__form">
+										<div class="shopping-cart-form__column">
+											<input type="text" class="input shopping-cart-form__input"
+												placeholder="ИНН лица или организации ">
+											<input type="text" class="input shopping-cart-form__input" placeholder="имя">
+											<input type="text" class="input shopping-cart-form__input" placeholder="телефон">
+										</div>
+										<div class="shopping-cart-form__column">
+											<input type="text" class="input shopping-cart-form__input" placeholder="e-mail">
+											<button class="btn-1 shopping-cart-form__btn">отправить заявку</button>
+											<div class="shopping-cart-form__privacy">
+												<div class="checkbox">
+													<input class="custom-checkbox" type="checkbox" id="remember" name="remember" value="remember"
+														checked>
+													<label for="remember">Я соглашаюсь на обработку персональных данных</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__block">
+						<div class="footer__top">
+							<a href="#" class="footer__logo">
+								<img src="img/header/logo.png" alt="лого">
+							</a>
+							<div class="footer__group">
+								<a href="tel:88004567819" class="footer__link footer__phone">
+									<span class="footer__icon">
+										<img src="img/footer/phone-icon.svg" alt="телефон">
+									</span>
+									<p>8 800 456 78 19</p>
+								</a>
+								<a href="mailto:forrainfo@mail.ru" class="footer__link footer__mail">
+									<span class="footer__icon">
+										<img src="img/footer/mail-icon.svg" alt="почта">
+									</span>
+									<p>forrainfo@mail.ru</p>
+								</a>
+							</div>
+							<div class="footer__socials">
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/vk.svg" alt="вконтакте">
+								</a>
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/tg.svg" alt="телеграм">
+								</a>
+							</div>
+							<div class="footer__text">
+								<p>Весь контент принадлежит: ИП Ржавитин А.С., ИНН 583519379849</p>
+								<p>Фотографии, видеоматериалы и тексты, представленные на этом сайте, предназначены для ознакомления,
+									пожалуйста, не используйте их в коммерческих целях.</p>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__links">
+								<a href="#" target="_blank" class="footer__oferta">Публичная оферта</a>
+								<a href="#" target="_blank" class="footer__oferta">Политика конфиденциальности</a>
+								<a href="#" target="_blank" class="footer__oferta">Согласие на рассылку</a>
+							</div>
+							<a href="#" target="_blank" class="footer__founder">
+								<span>Разработано</span>
+								<img src="img/footer/founder-logo.svg" alt="eleven lab">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

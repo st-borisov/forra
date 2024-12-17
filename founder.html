@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- шапка -->
+	<nav class="navbar" id="header">
+		<div class="container">
+			<div class="navbar__wrapper">
+				<a class="navbar-brand" href="#">
+					<img src="img/header/logo.png" alt="лого forra">
+				</a>
+				<div class="navbar__right">
+					<ul class="navbar-nav align-items-center flex-row">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Академия</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Основатель</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Продукты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Цены</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Магазин</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+					<a href="tel:88004567819" class="navbar-phone d-lg-none">8 800 456 78 19</a>
+					<button class="navbar-burger d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#burger"
+						aria-controls="offcanvasExample">
+						<svg width="63" height="15" viewBox="0 0 63 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.6216 7.5C13.6216 11.366 10.5723 14.5 6.81081 14.5C3.0493 14.5 0 11.366 0 7.5C0 3.63401 3.0493 0.5 6.81081 0.5C10.5723 0.5 13.6216 3.63401 13.6216 7.5Z"
+								fill="black" />
+							<path
+								d="M38.3108 7.5C38.3108 11.366 35.2615 14.5 31.5 14.5C27.7385 14.5 24.6892 11.366 24.6892 7.5C24.6892 3.63401 27.7385 0.5 31.5 0.5C35.2615 0.5 38.3108 3.63401 38.3108 7.5Z"
+								fill="black" />
+							<path
+								d="M63 7.5C63 11.366 59.9507 14.5 56.1892 14.5C52.4277 14.5 49.3784 11.366 49.3784 7.5C49.3784 3.63401 52.4277 0.5 56.1892 0.5C59.9507 0.5 63 3.63401 63 7.5Z"
+								fill="black" />
+						</svg>
+					</button>
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="burger" aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<button type="button" class="navbar-offcanvas__close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+								<svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L17 16.5L2 31" stroke="white" stroke-width="3" />
+								</svg>
+							</button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Академию</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Основателя</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Продукты и услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Тарифы и цены</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Новости</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+							<div class="navbar-offcanvas__contacts">
+								<a href="tel:88004567819" class="navbar-offcanvas__phone">8 800 456 78 19</a>
+								<p class="navbar-offcanvas__address">Пенза, ул. Терновского 220, к. 4</p>
+							</div>
+							<a href="#" class="navbar-offcanvas__btn">связаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+		<nav aria-label="breadcrumb" class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Об основателе</li>
+				</ol>
+			</div>
+		</nav>
+
+		<section class="founder-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="founder-main__block">
+							<div class="founder-main__left">
+								<div class="founder-main__header">
+									<h1 class="section-title">Антон Ржавитин</h1>
+									<div class="founder-main__text item-name">
+										<p>Основатель Академии рекламного бизнеса «FOR<span class="color">RA</span>»</p>
+									</div>
+								</div>
+								<div class="founder-main__content">
+									<div class="founder-main__items">
+										<div class="founder-main__item">
+											<p>Основатель РПК
+												«Арт-Мастер» (г. Пенза)</p>
+										</div>
+										<div class="founder-main__item">
+											<p>Член Правления Ассоциации «ВИЗКОМ» (г. Москва)</p>
+										</div>
+										<div class="founder-main__item">
+											<p>Автор статей в журнале «Наружка»</p>
+										</div>
+										<div class="founder-main__item">
+											<p>Спикер SignForum, «Лидеры РПК», Printech, «неФОРУМ»</p>
+										</div>
+										<div class="founder-main__item">
+											<p>Член ассоциации «Деловая Россия»</p>
+										</div>
+									</div>
+								</div>
+								<div class="founder-main__buttons">
+									<button class="btn-1 founder-main__consult">Получить персональную консультацию</button>
+									<a href="#" class="btn-1 founder-main__link">
+										Связаться в Telegram
+										<svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M27.7247 10.3271C26.8371 15.9011 25.8726 21.9946 25.8726 21.9946C25.8726 21.9946 25.7238 23.7043 24.4643 24C23.1149 23.9792 21.8107 23.5089 20.7576 22.663C20.46 22.4394 15.1962 19.097 13.2697 17.4618C13.0732 17.3288 12.9136 17.1482 12.8056 16.9366C12.6976 16.7251 12.6449 16.4896 12.6524 16.2521C12.6598 16.0146 12.7271 15.7829 12.8481 15.5785C12.9691 15.3742 13.1397 15.2039 13.3441 15.0835C15.9846 12.6559 18.5794 10.1787 21.127 7.65317C22.0171 6.76101 22.9072 4.68102 19.2005 7.20838C13.9367 10.849 8.74725 14.2659 8.74725 14.2659C8.21278 14.5076 7.63517 14.6388 7.04897 14.6516C6.46276 14.6644 5.88 14.5586 5.33552 14.3405C3.11149 13.672 0.518061 12.7799 0.518061 12.7799C0.518061 12.7799 -1.26219 11.6666 1.77758 10.4659C1.77758 10.4659 14.6036 5.19009 19.0517 3.33378C20.7576 2.59075 26.5395 0.21251 26.5395 0.21251C26.5395 0.21251 29.2099 -0.828773 28.9868 1.69858C28.9124 2.75015 28.3198 6.39078 27.7247 10.3271Z"
+												fill="white" />
+										</svg>
+									</a>
+									<a href="#" class="btn-1 founder-main__link">
+										Сохранить мой контакт
+									</a>
+								</div>
+							</div>
+							<div class="founder-main__right">
+								<div class="founder-main__box">
+									<div class="founder-main__wrapper">
+										<div class="founder-main__image box">
+											<img src="img/founder/founder-main/image.png" alt="фото">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ЭКСПЕРТИЗА -->
+		<section class="expertise">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="expertise__header">
+							<h2 class="section-title">ЭКСПЕРТИЗА</h2>
+							<div class="expertise__arrows slick-arrows">
+								<button class="slick-prev slick-arrow expertise__slider-prev" aria-label="Previous" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+								<button class="slick-next slick-arrow expertise__slider-next" aria-label="Next" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="expertise__slider">
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-1.jpg" alt="фото сертификата">
+							</div>
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-2.jpg" alt="фото сертификата">
+							</div>
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-3.jpg" alt="фото сертификата">
+							</div>
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-4.jpg" alt="фото сертификата">
+							</div>
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-1.jpg" alt="фото сертификата">
+							</div>
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-2.jpg" alt="фото сертификата">
+							</div>
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-3.jpg" alt="фото сертификата">
+							</div>
+							<div class="expertise__slide">
+								<img src="img/founder/expertise/image-4.jpg" alt="фото сертификата">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ВЫСТУПЛЕНИЯ -->
+		<section class="speeches">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="speeches__header">
+							<h2 class="section-title">ВЫСТУПЛЕНИЯ</h2>
+							<div class="speeches__arrows slick-arrows">
+								<button class="slick-prev slick-arrow speeches__slider-prev" aria-label="Previous" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+								<button class="slick-next slick-arrow speeches__slider-next" aria-label="Next" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="speeches__slider">
+							<div class="speeches__slide" data-bs-toggle="modal" data-bs-target="#speechesModal-1">
+								<div class="speeches__wrapper">
+									<div class="speeches__image box">
+										<img src="img/founder/speeches/video-image-1.jpg" alt="видео">
+									</div>
+									<div class="speeches__play">
+										<svg width="51" height="67" viewBox="0 0 51 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 0L51 33.5L0 67V0Z" fill="white" />
+										</svg>
+									</div>
+								</div>
+								<p>Sign Forum 2023</p>
+							</div>
+							<div class="speeches__slide" data-bs-toggle="modal" data-bs-target="#speechesModal-2">
+								<div class="speeches__wrapper">
+									<div class="speeches__image box">
+										<img src="img/founder/speeches/video-image-2.jpg" alt="видео">
+									</div>
+									<div class="speeches__play">
+										<svg width="51" height="67" viewBox="0 0 51 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 0L51 33.5L0 67V0Z" fill="white" />
+										</svg>
+									</div>
+								</div>
+								<p>Sign Forum 2023</p>
+							</div>
+							<div class="speeches__slide" data-bs-toggle="modal" data-bs-target="#speechesModal-3">
+								<div class="speeches__wrapper">
+									<div class="speeches__image box">
+										<img src="img/founder/speeches/video-image-3.jpg" alt="видео">
+									</div>
+									<div class="speeches__play">
+										<svg width="51" height="67" viewBox="0 0 51 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 0L51 33.5L0 67V0Z" fill="white" />
+										</svg>
+									</div>
+								</div>
+								<p>Sign Forum 2023</p>
+							</div>
+							<div class="speeches__slide" data-bs-toggle="modal" data-bs-target="#speechesModal-4">
+								<div class="speeches__wrapper">
+									<div class="speeches__image box">
+										<img src="img/founder/speeches/video-image-1.jpg" alt="видео">
+									</div>
+									<div class="speeches__play">
+										<svg width="51" height="67" viewBox="0 0 51 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 0L51 33.5L0 67V0Z" fill="white" />
+										</svg>
+									</div>
+								</div>
+								<p>Sign Forum 2023</p>
+							</div>
+						</div>
+						<!-- Модальное окно с видео -->
+						<div class="modal modal-video fade" id="speechesModal-1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<button type="button" class="modal-btn" data-bs-dismiss="modal">
+										<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M26 2.42236L23.5776 0L13 10.5776L2.42236 0L0 2.42236L10.5776 13L0 23.5776L2.42236 26L13 15.4224L23.5776 26L26 23.5776L15.4224 13L26 2.42236Z"
+												fill="black" />
+										</svg>
+									</button>
+									<video controls preload="metadata">
+										<source src="video/video-example.mp4" type='video/mp4' />
+									</video>
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+						<!-- Модальное окно с видео -->
+						<div class="modal modal-video fade" id="speechesModal-2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<button type="button" class="modal-btn" data-bs-dismiss="modal">
+										<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M26 2.42236L23.5776 0L13 10.5776L2.42236 0L0 2.42236L10.5776 13L0 23.5776L2.42236 26L13 15.4224L23.5776 26L26 23.5776L15.4224 13L26 2.42236Z"
+												fill="black" />
+										</svg>
+									</button>
+									<video controls preload="metadata">
+										<source src="video/video-example.mp4" type='video/mp4' />
+									</video>
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+						<!-- Модальное окно с видео -->
+						<div class="modal modal-video fade" id="speechesModal-3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<button type="button" class="modal-btn" data-bs-dismiss="modal">
+										<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M26 2.42236L23.5776 0L13 10.5776L2.42236 0L0 2.42236L10.5776 13L0 23.5776L2.42236 26L13 15.4224L23.5776 26L26 23.5776L15.4224 13L26 2.42236Z"
+												fill="black" />
+										</svg>
+									</button>
+									<video controls preload="metadata">
+										<source src="video/video-example.mp4" type='video/mp4' />
+									</video>
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+						<!-- Модальное окно с видео -->
+						<div class="modal modal-video fade" id="speechesModal-4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<button type="button" class="modal-btn" data-bs-dismiss="modal">
+										<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M26 2.42236L23.5776 0L13 10.5776L2.42236 0L0 2.42236L10.5776 13L0 23.5776L2.42236 26L13 15.4224L23.5776 26L26 23.5776L15.4224 13L26 2.42236Z"
+												fill="black" />
+										</svg>
+									</button>
+									<video controls preload="metadata">
+										<source src="video/video-example.mp4" type='video/mp4' />
+									</video>
+								</div>
+							</div>
+						</div>
+						<!-- end -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- СТАТЬИ -->
+		<section class="articles">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="articles__header">
+							<h2 class="section-title">СТАТЬИ</h2>
+							<div class="articles__arrows slick-arrows">
+								<button class="slick-prev slick-arrow articles__slider-prev" aria-label="Previous" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+								<button class="slick-next slick-arrow articles__slider-next" aria-label="Next" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="articles__slider">
+							<div class="articles__slide">
+								<div class="news__card">
+									<div class="news__box box">
+										<img src="img/news/image-1.jpg" alt="фото">
+									</div>
+									<div class="news__info">
+										<p>30.11.23</p>
+										<h4>Заголовок новости</h4>
+										<div class="news__text">
+											<p>Краткое описание о чем новости и главные темы на несколько строк</p>
+										</div>
+										<a href="#" class="news__btn btn-1">читать</a>
+									</div>
+								</div>
+							</div>
+							<div class="articles__slide">
+								<div class="news__card">
+									<div class="news__box box">
+										<img src="img/news/image-1.jpg" alt="фото">
+									</div>
+									<div class="news__info">
+										<p>30.11.23</p>
+										<h4>Заголовок новости</h4>
+										<div class="news__text">
+											<p>Краткое описание о чем новости и главные темы на несколько строк</p>
+										</div>
+										<a href="#" class="news__btn btn-1">читать</a>
+									</div>
+								</div>
+							</div>
+							<div class="articles__slide">
+								<div class="news__card">
+									<div class="news__box box">
+										<img src="img/news/image-1.jpg" alt="фото">
+									</div>
+									<div class="news__info">
+										<p>30.11.23</p>
+										<h4>Заголовок новости</h4>
+										<div class="news__text">
+											<p>Краткое описание о чем новости и главные темы на несколько строк</p>
+										</div>
+										<a href="#" class="news__btn btn-1">читать</a>
+									</div>
+								</div>
+							</div>
+							<div class="articles__slide">
+								<div class="news__card">
+									<div class="news__box box">
+										<img src="img/news/image-1.jpg" alt="фото">
+									</div>
+									<div class="news__info">
+										<p>30.11.23</p>
+										<h4>Заголовок новости</h4>
+										<div class="news__text">
+											<p>Краткое описание о чем новости и главные темы на несколько строк</p>
+										</div>
+										<a href="#" class="news__btn btn-1">читать</a>
+									</div>
+								</div>
+							</div>
+							<div class="articles__slide">
+								<div class="news__card">
+									<div class="news__box box">
+										<img src="img/news/image-1.jpg" alt="фото">
+									</div>
+									<div class="news__info">
+										<p>30.11.23</p>
+										<h4>Заголовок новости</h4>
+										<div class="news__text">
+											<p>Краткое описание о чем новости и главные темы на несколько строк</p>
+										</div>
+										<a href="#" class="news__btn btn-1">читать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Галерея -->
+		<section class="gallery-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="gallery-block__wrapper">
+							<h2 class="section-title">Галерея</h2>
+							<div class="gallery-block__slider_wrapper">
+								<div class="gallery-block__slider swiper">
+									<div class="swiper-wrapper">
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-1.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-1.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+									</div>
+									<div class="news-item__arrows slick-arrows">
+										<button class="slick-next slick-arrow news-item__slider-next swiper-button-next">
+											<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+											</svg>
+										</button>
+										<button class="slick-prev slick-arrow news-item__slider-prev swiper-button-prev">
+											<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+											</svg>
+										</button>
+									</div>
+									<div class="swiper-pagination news-item-slider-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Хотите узнать больше о FORRA.price? -->
+		<section class="form-tour form-tour-two">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="form-tour__block">
+							<div class="form-tour__left">
+								<p class="form-tour__title">Хотите быстро увеличить прибыль Вашей РПК?</p>
+								<div class="form-tour__text text">
+									<p>Запишитесь на персональную консультацию с Антоном Ржавитиным</p>
+								</div>
+							</div>
+							<div class="form-tour__right">
+								<div class="form-tour__form">
+									<div class="form-tour__inputs">
+										<input type="text" class="form-tour__input input" placeholder="имя">
+										<input type="text" class="form-tour__input input" placeholder="телефон">
+										<input type="text" class="form-tour__input input" placeholder="e-mail">
+									</div>
+									<div class="form-tour__send">
+										<div class="form-select__wrapper">
+											<select class="form-select" name="theme">
+												<option value=""></option>
+												<option value="AL">тема 1</option>
+												<option value="WY">тема 2</option>
+												<option value="AL">тема 3</option>
+												<option value="WY">тема 4</option>
+											</select>
+										</div>
+										<div class="form-tour__calendar">
+											<input type="text" class="input form-tour__input" id="datepicker" placeholder="Выберите дату">
+										</div>
+										<div class="form-tour__bottom">
+											<button type="submit" class="btn-1 form-tour__btn">Записаться на консультацию</button>
+											<div class="shopping-cart-form__privacy">
+												<div class="checkbox">
+													<input class="custom-checkbox" type="checkbox" id="remember" name="remember" value="remember"
+														checked>
+													<label for="remember">Я соглашаюсь на обработку<br> персональных данных</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__block">
+						<div class="footer__top">
+							<a href="#" class="footer__logo">
+								<img src="img/header/logo.png" alt="лого">
+							</a>
+							<div class="footer__group">
+								<a href="tel:88004567819" class="footer__link footer__phone">
+									<span class="footer__icon">
+										<img src="img/footer/phone-icon.svg" alt="телефон">
+									</span>
+									<p>8 800 456 78 19</p>
+								</a>
+								<a href="mailto:forrainfo@mail.ru" class="footer__link footer__mail">
+									<span class="footer__icon">
+										<img src="img/footer/mail-icon.svg" alt="почта">
+									</span>
+									<p>forrainfo@mail.ru</p>
+								</a>
+							</div>
+							<div class="footer__socials">
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/vk.svg" alt="вконтакте">
+								</a>
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/tg.svg" alt="телеграм">
+								</a>
+							</div>
+							<div class="footer__text">
+								<p>Весь контент принадлежит: ИП Ржавитин А.С., ИНН 583519379849</p>
+								<p>Фотографии, видеоматериалы и тексты, представленные на этом сайте, предназначены для ознакомления,
+									пожалуйста, не используйте их в коммерческих целях.</p>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__links">
+								<a href="#" target="_blank" class="footer__oferta">Публичная оферта</a>
+								<a href="#" target="_blank" class="footer__oferta">Политика конфиденциальности</a>
+								<a href="#" target="_blank" class="footer__oferta">Согласие на рассылку</a>
+							</div>
+							<a href="#" target="_blank" class="footer__founder">
+								<span>Разработано</span>
+								<img src="img/footer/founder-logo.svg" alt="eleven lab">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.gallery-block__slider', {
+			// Optional parameters
+			loop: true,
+			speed: 800,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			breakpoints: {
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 34,
+				},
+
+				0: {
+					slidesPerView: 1.2,
+					spaceBetween: 16,
+				},
+			}
+
+		});
+	</script>
+</body>
+
+</html>

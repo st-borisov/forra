@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- шапка -->
+	<nav class="navbar" id="header">
+		<div class="container">
+			<div class="navbar__wrapper">
+				<a class="navbar-brand" href="#">
+					<img src="img/header/logo.png" alt="лого forra">
+				</a>
+				<div class="navbar__right">
+					<ul class="navbar-nav align-items-center flex-row">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Академия</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Основатель</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Продукты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Цены</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Магазин</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+					<a href="tel:88004567819" class="navbar-phone d-lg-none">8 800 456 78 19</a>
+					<button class="navbar-burger d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#burger"
+						aria-controls="offcanvasExample">
+						<svg width="63" height="15" viewBox="0 0 63 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.6216 7.5C13.6216 11.366 10.5723 14.5 6.81081 14.5C3.0493 14.5 0 11.366 0 7.5C0 3.63401 3.0493 0.5 6.81081 0.5C10.5723 0.5 13.6216 3.63401 13.6216 7.5Z"
+								fill="black" />
+							<path
+								d="M38.3108 7.5C38.3108 11.366 35.2615 14.5 31.5 14.5C27.7385 14.5 24.6892 11.366 24.6892 7.5C24.6892 3.63401 27.7385 0.5 31.5 0.5C35.2615 0.5 38.3108 3.63401 38.3108 7.5Z"
+								fill="black" />
+							<path
+								d="M63 7.5C63 11.366 59.9507 14.5 56.1892 14.5C52.4277 14.5 49.3784 11.366 49.3784 7.5C49.3784 3.63401 52.4277 0.5 56.1892 0.5C59.9507 0.5 63 3.63401 63 7.5Z"
+								fill="black" />
+						</svg>
+					</button>
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="burger" aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<button type="button" class="navbar-offcanvas__close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+								<svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L17 16.5L2 31" stroke="white" stroke-width="3" />
+								</svg>
+							</button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Академию</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Основателя</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Продукты и услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Тарифы и цены</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Новости</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+							<div class="navbar-offcanvas__contacts">
+								<a href="tel:88004567819" class="navbar-offcanvas__phone">8 800 456 78 19</a>
+								<p class="navbar-offcanvas__address">Пенза, ул. Терновского 220, к. 4</p>
+							</div>
+							<a href="#" class="navbar-offcanvas__btn">связаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+		<nav aria-label="breadcrumb" class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item"><a href="#">Новости</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Подробнее</li>
+				</ol>
+			</div>
+		</nav>
+
+		<section class="news-item">
+			<div class="container">
+				<div class="news-item__block">
+					<div class="news-item__group">
+						<div class="news-item__left">
+							<p>30.11.23</p>
+							<h1>Форум РПК2024</h1>
+							<div class="bold">
+								<p>FORRA.price – это простая и понятная система для управления рекламным производством, которая легко
+									настраивается и быстро внедряется в компанию любого уровня. </p>
+							</div>
+							<div class="">
+								<p>Мы отлично знаем рекламный бизнес, т.к. уже 15 лет производим наружную рекламу по всей России. Наша
+									система – это готовое решение, которое можно использовать сразу, даже без предварительной настройки.
+									FORRA.price работает на независимой платформе и включает в себя весь необходимый функционал для
+									эффективной и прибыльной работы РПК.</p>
+								<p>FORRA.price – это понятный интерфейс и удобная система индикации, которая позволит руководителю
+									быстро
+									выявлять отклонения в работе сотрудников и принимать оперативные решения.</p>
+								<p>Мы регулярно получаем обратную связь от наших пользователей и выпускаем бесплатные обновления с
+									новыми
+									функциями, поэтому FORRA.price – это положительный опыт сотен рекламных производств по всей России!
+								</p>
+							</div>
+						</div>
+						<div class="news-item__right">
+							<div class="news-item__image box">
+								<img src="img/news-item/image-1.jpg" alt="фото">
+							</div>
+						</div>
+					</div>
+					<div class="news-item-video" data-bs-toggle="modal" data-bs-target="#newsModal">
+						<div class="news-item-video__wrapper">
+							<div class="news-item-video__image box">
+								<img src="img/news-item/video-image.jpg" alt="видео">
+							</div>
+							<div class="news-item-video__play">
+								<svg width="211" height="211" viewBox="0 0 211 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M171.791 66.6544C181.997 84.3322 184.763 105.34 179.48 125.057C174.197 144.774 161.297 161.585 143.62 171.791C125.942 181.998 104.934 184.763 85.2167 179.48C65.4997 174.197 48.689 161.298 38.4828 143.62L105.137 105.137L171.791 66.6544Z"
+										fill="#D9000F" />
+									<path
+										d="M38.4825 143.62C28.2762 125.942 25.5105 104.934 30.7936 85.2171C36.0768 65.5002 48.9761 48.6895 66.6538 38.4832C84.3316 28.2769 105.34 25.5111 125.057 30.7943C144.774 36.0774 161.584 48.9767 171.791 66.6545L105.137 105.137L38.4825 143.62Z"
+										fill="black" />
+									<path d="M85.8945 71.4648L138.808 105.137L85.8945 138.81V71.4648Z" fill="white" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<!-- Модальное окно с видео -->
+					<div class="modal modal-video fade" id="newsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<button type="button" class="modal-btn" data-bs-dismiss="modal">
+									<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M26 2.42236L23.5776 0L13 10.5776L2.42236 0L0 2.42236L10.5776 13L0 23.5776L2.42236 26L13 15.4224L23.5776 26L26 23.5776L15.4224 13L26 2.42236Z"
+											fill="black" />
+									</svg>
+								</button>
+								<video controls preload="metadata">
+									<source src="video/video-example.mp4" type='video/mp4' />
+								</video>
+							</div>
+						</div>
+					</div>
+					<!-- end -->
+					<div class="news-item__text">
+						<p>FORRA.price – это простая и понятная система для управления рекламным производством, которая легко
+							настраивается и быстро внедряется в компанию любого уровня. Мы отлично знаем рекламный бизнес, т.к. уже 15
+							лет производим наружную рекламу по всей России. Наша система – это готовое решение, которое можно
+							использовать сразу, даже без предварительной настройки. FORRA.price работает на независимой платформе и
+							включает в себя весь необходимый функционал для эффективной и прибыльной работы РПК.</p>
+						<p>FORRA.price – это понятный интерфейс и удобная система индикации, которая позволит руководителю быстро
+							выявлять отклонения в работе сотрудников и принимать оперативные решения.Мы регулярно получаем обратную
+							связь от наших пользователей и выпускаем бесплатные обновления с новыми функциями, поэтому FORRA.price –
+							это
+							положительный опыт сотен рекламных производств по всей России!</p>
+					</div>
+					<div class="news-item__slider_wrapper">
+						<div class="news-item__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="news-item__slide swiper-slide">
+									<img src="img/news-item/slider-image-1.jpg" alt="фото">
+								</div>
+								<div class="news-item__slide swiper-slide">
+									<img src="img/news-item/slider-image-2.jpg" alt="фото">
+								</div>
+								<div class="news-item__slide swiper-slide">
+									<img src="img/news-item/slider-image-2.jpg" alt="фото">
+								</div>
+								<div class="news-item__slide swiper-slide">
+									<img src="img/news-item/slider-image-1.jpg" alt="фото">
+								</div>
+								<div class="news-item__slide swiper-slide">
+									<img src="img/news-item/slider-image-2.jpg" alt="фото">
+								</div>
+								<div class="news-item__slide swiper-slide">
+									<img src="img/news-item/slider-image-2.jpg" alt="фото">
+								</div>
+							</div>
+							<div class="news-item__arrows slick-arrows">
+								<button class="slick-next slick-arrow news-item__slider-next swiper-button-next">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+								<button class="slick-prev slick-arrow news-item__slider-prev swiper-button-prev">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+							<div class="swiper-pagination news-item-slider-pagination"></div>
+						</div>
+					</div>
+					<div class="news-item__text">
+						<p>FORRA.price – это простая и понятная система для управления рекламным производством, которая легко
+							настраивается и быстро внедряется в компанию любого уровня. Мы отлично знаем рекламный бизнес, т.к. уже 15
+							лет производим наружную рекламу по всей России. Наша система – это готовое решение, которое можно
+							использовать сразу, даже без предварительной настройки. FORRA.price работает на независимой платформе и
+							включает в себя весь необходимый функционал для эффективной и прибыльной работы РПК.</p>
+						<p>FORRA.price – это понятный интерфейс и удобная система индикации, которая позволит руководителю быстро
+							выявлять отклонения в работе сотрудников и принимать оперативные решения.Мы регулярно получаем обратную
+							связь от наших пользователей и выпускаем бесплатные обновления с новыми функциями, поэтому FORRA.price –
+							это
+							положительный опыт сотен рекламных производств по всей России!</p>
+					</div>
+					<nav aria-label="Пример навигации по страницам" class="news-item__pagination">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link btn-1" href="#">все новости</a></li>
+							<div class="pagination-pages">
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+							</div>
+							<li class="page-item"><a class="page-link btn-1" href="#">следущая новость</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+		<div class="order d-flex flex-column">
+			<!-- Хотите узнать больше о FORRA.price? -->
+			<section class="form-tour form-tour-two order-2 order-sm-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="form-tour__block">
+								<div class="form-tour__left">
+									<p class="form-tour__title">ХОТИТЕ БОЛЬШЕ УЗНАТЬ О НАШИХ ТОВАРАХ И УСЛУГАХ?</p>
+									<div class="form-tour__text text">
+										<p>Запишитесь на онлайн-экскурсию в эко-систему FORRA.price!</p>
+									</div>
+								</div>
+								<div class="form-tour__right">
+									<div class="form-tour__form">
+										<div class="form-tour__inputs">
+											<input type="text" class="form-tour__input input" placeholder="имя">
+											<input type="text" class="form-tour__input input" placeholder="телефон">
+											<input type="text" class="form-tour__input input" placeholder="e-mail">
+										</div>
+										<div class="form-tour__send">
+											<div class="form-tour__calendar">
+												<input type="text" class="input form-tour__input" id="datepicker" placeholder="Выберите дату">
+											</div>
+											<div class="form-tour__bottom">
+												<button type="submit" class="btn-1 form-tour__btn">записаться на экскурсию</button>
+												<p class="form-tour__privacy">нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ВАМ МОГУТ БЫТЬ ПОЛЕЗНЫ -->
+			<section class="useful-products order-1 order-sm-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="useful-products__header">
+								<h2 class="section-title">ВАМ МОГУТ БЫТЬ ПОЛЕЗНЫ</h2>
+								<div class="useful-products__arrows slick-arrows">
+									<button class="slick-prev slick-arrow useful-products__slider-prev" aria-label="Previous"
+										type="button">
+										<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+										</svg>
+									</button>
+									<button class="slick-next slick-arrow useful-products__slider-next" aria-label="Next" type="button">
+										<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="useful-products__slider">
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-1.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">База знаний</h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-2.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">Продажи</h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-3.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">Структура РПК</h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-4.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">FOR<span class="color">RA</span>.<span class="transf">price</span></h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-1.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">База знаний</h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-2.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">Продажи</h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-3.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">Структура РПК</h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="useful-products__slide">
+									<div class="useful-products__image box">
+										<img src="img/useful-products/image-4.jpg" alt="фото">
+									</div>
+									<div class="useful-products__info">
+										<h4 class="item-name">FOR<span class="color">RA</span>.<span class="transf">price</span></h4>
+										<div class="useful-products__text">
+											<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+										</div>
+										<button class="btn-1 useful-products__btn">
+											<span>добавить в корзину</span>
+											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__block">
+						<div class="footer__top">
+							<a href="#" class="footer__logo">
+								<img src="img/header/logo.png" alt="лого">
+							</a>
+							<div class="footer__group">
+								<a href="tel:88004567819" class="footer__link footer__phone">
+									<span class="footer__icon">
+										<img src="img/footer/phone-icon.svg" alt="телефон">
+									</span>
+									<p>8 800 456 78 19</p>
+								</a>
+								<a href="mailto:forrainfo@mail.ru" class="footer__link footer__mail">
+									<span class="footer__icon">
+										<img src="img/footer/mail-icon.svg" alt="почта">
+									</span>
+									<p>forrainfo@mail.ru</p>
+								</a>
+							</div>
+							<div class="footer__socials">
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/vk.svg" alt="вконтакте">
+								</a>
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/tg.svg" alt="телеграм">
+								</a>
+							</div>
+							<div class="footer__text">
+								<p>Весь контент принадлежит: ИП Ржавитин А.С., ИНН 583519379849</p>
+								<p>Фотографии, видеоматериалы и тексты, представленные на этом сайте, предназначены для ознакомления,
+									пожалуйста, не используйте их в коммерческих целях.</p>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__links">
+								<a href="#" target="_blank" class="footer__oferta">Публичная оферта</a>
+								<a href="#" target="_blank" class="footer__oferta">Политика конфиденциальности</a>
+								<a href="#" target="_blank" class="footer__oferta">Согласие на рассылку</a>
+							</div>
+							<a href="#" target="_blank" class="footer__founder">
+								<span>Разработано</span>
+								<img src="img/footer/founder-logo.svg" alt="eleven lab">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.news-item__slider', {
+			// Optional parameters
+			loop: true,
+			speed: 800,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			breakpoints: {
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 34,
+				},
+
+				0: {
+					slidesPerView: 1.2,
+					spaceBetween: 16,
+				},
+			}
+
+		});
+	</script>
+</body>
+
+</html>

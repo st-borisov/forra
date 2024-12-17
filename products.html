@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- шапка -->
+	<nav class="navbar" id="header">
+		<div class="container">
+			<div class="navbar__wrapper">
+				<a class="navbar-brand" href="#">
+					<img src="img/header/logo.png" alt="лого forra">
+				</a>
+				<div class="navbar__right">
+					<ul class="navbar-nav align-items-center flex-row">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Академия</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Основатель</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Продукты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Цены</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Магазин</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+					<a href="tel:88004567819" class="navbar-phone d-lg-none">8 800 456 78 19</a>
+					<button class="navbar-burger d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#burger"
+						aria-controls="offcanvasExample">
+						<svg width="63" height="15" viewBox="0 0 63 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.6216 7.5C13.6216 11.366 10.5723 14.5 6.81081 14.5C3.0493 14.5 0 11.366 0 7.5C0 3.63401 3.0493 0.5 6.81081 0.5C10.5723 0.5 13.6216 3.63401 13.6216 7.5Z"
+								fill="black" />
+							<path
+								d="M38.3108 7.5C38.3108 11.366 35.2615 14.5 31.5 14.5C27.7385 14.5 24.6892 11.366 24.6892 7.5C24.6892 3.63401 27.7385 0.5 31.5 0.5C35.2615 0.5 38.3108 3.63401 38.3108 7.5Z"
+								fill="black" />
+							<path
+								d="M63 7.5C63 11.366 59.9507 14.5 56.1892 14.5C52.4277 14.5 49.3784 11.366 49.3784 7.5C49.3784 3.63401 52.4277 0.5 56.1892 0.5C59.9507 0.5 63 3.63401 63 7.5Z"
+								fill="black" />
+						</svg>
+					</button>
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="burger" aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<button type="button" class="navbar-offcanvas__close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+								<svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L17 16.5L2 31" stroke="white" stroke-width="3" />
+								</svg>
+							</button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Академию</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Основателя</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Продукты и услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Тарифы и цены</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Новости</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+							<div class="navbar-offcanvas__contacts">
+								<a href="tel:88004567819" class="navbar-offcanvas__phone">8 800 456 78 19</a>
+								<p class="navbar-offcanvas__address">Пенза, ул. Терновского 220, к. 4</p>
+							</div>
+							<a href="#" class="navbar-offcanvas__btn">связаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+		<nav aria-label="breadcrumb" class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Продукты и услуги</li>
+				</ol>
+			</div>
+		</nav>
+
+		<section class="products-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="section-title">ПРОДУКТЫ И УСЛУГИ</h1>
+					</div>
+				</div>
+			</div>
+			<div class="products-main__block">
+				<div class="container">
+					<div class="products-main__cards">
+						<div class="products-main-card products-main-card_one">
+							<div class="products-main-card__left">
+								<div class="products-main-card__header">
+									<div class="products-main-card__icon box">
+										<img src="img/products/products-main/icon-1.svg" alt="иконка">
+									</div>
+									<h3 class="name">УПРАВЛЕНИЕ И АВТОМАТИЗАЦИЯ в FOR<span class="color">RA</span>.<span
+											class="transf">price</span></h3>
+								</div>
+								<div class="products-main-card__text">
+									<p>Увеличит производительность Вашей компании за счет четкой системы финансового учета, грамотного
+										формирования цен, прозрачной аналитики, планирования производственного процесса, расчета сдельных
+										оплат и оптимизации постоянных затрат.</p>
+								</div>
+							</div>
+							<div class="products-main-card__right">
+								<a href="#" class="products-main-card__more btn-1">узнать больше</a>
+								<button class="btn-2 products-main-card__cart">
+									<span>добавить в корзину</span>
+									<svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M30.9326 5.86169L27.3272 17.9806C27.0576 18.8437 26.35 19.4191 25.5076 19.4191H11.5913C10.7826 19.4191 10.0076 18.8797 9.73804 18.0885L4.41413 2.8769H1.34783C0.606522 2.8769 0 2.2296 0 1.43845C0 0.647303 0.606522 0 1.34783 0H5.35761C5.93043 0 6.43587 0.395574 6.63804 0.970954L12.1304 16.5422H24.9348L27.7989 6.83264H11.9283C11.187 6.83264 10.5804 6.18534 10.5804 5.39419C10.5804 4.60304 11.187 3.95574 11.9283 3.95574H29.6522C30.0902 3.95574 30.4946 4.20747 30.7304 4.56708C31 4.92669 31.0674 5.43015 30.9326 5.86169ZM12.2652 21.325C11.6924 21.325 11.1196 21.5768 10.7152 22.0083C10.3109 22.4398 10.075 23.0512 10.075 23.6625C10.075 24.2739 10.3109 24.8852 10.7152 25.3167C11.1196 25.7483 11.6924 26 12.2652 26C12.838 26 13.4109 25.7483 13.8152 25.3167C14.2196 24.8852 14.4554 24.2739 14.4554 23.6625C14.4554 23.0512 14.2196 22.4398 13.8152 22.0083C13.4109 21.5768 12.838 21.325 12.2652 21.325ZM24.362 21.325C23.7891 21.325 23.2163 21.5768 22.812 22.0083C22.4076 22.4398 22.1717 23.0512 22.1717 23.6625C22.1717 24.2739 22.4076 24.8852 22.812 25.3167C23.2163 25.7483 23.7891 26 24.362 26C24.9348 26 25.5076 25.7483 25.912 25.3167C26.3163 24.8852 26.5522 24.2739 26.5522 23.6625C26.5522 23.0512 26.3163 22.4398 25.912 22.0083C25.5076 21.5768 24.9348 21.325 24.362 21.325Z"
+											fill="white" />
+									</svg>
+								</button>
+								<p class="products-main-card__price"><span>50 000</span> ₽</p>
+							</div>
+						</div>
+						<div class="products-main-card products-main-card_two">
+							<div class="products-main-card__left">
+								<div class="products-main-card__header">
+									<div class="products-main-card__icon box">
+										<img src="img/products/products-main/icon-2.svg" alt="иконка">
+									</div>
+									<h3 class="name">ОБУЧЕНИЕ СОТРУДНИКОВ в FOR<span class="color">RA</span>.<span
+											class="transf">price</span></h3>
+								</div>
+								<div class="products-main-card__text">
+									<p>Поможет Вам быстро обучить новичков, прокачать существующих сотрудников и проверить уровень их
+										знаний. Этот модуль состоит из трех разделов, которые полностью готовы к работе: продажи, база
+										знаний
+										и технологии</p>
+								</div>
+							</div>
+							<div class="products-main-card__right">
+								<p class="products-main-card__name">Каждый модуль вы можете приобрести отдельно:</p>
+								<div class="products-main-card__items">
+									<div class="products-main-card-item">
+										<p class="products-main-card-item__name text">Продажи</p>
+										<p class="products-main-card-item__price text"><span>15 000</span> ₽</p>
+										<div class="products-main-card__buttons">
+											<a href="#" class="products-main-card__more btn-1">узнать больше</a>
+											<button class="btn-2 products-main-card-item__cart">
+												<span>в корзину</span>
+												<svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M30.9326 5.86169L27.3272 17.9806C27.0576 18.8437 26.35 19.4191 25.5076 19.4191H11.5913C10.7826 19.4191 10.0076 18.8797 9.73804 18.0885L4.41413 2.8769H1.34783C0.606522 2.8769 0 2.2296 0 1.43845C0 0.647303 0.606522 0 1.34783 0H5.35761C5.93043 0 6.43587 0.395574 6.63804 0.970954L12.1304 16.5422H24.9348L27.7989 6.83264H11.9283C11.187 6.83264 10.5804 6.18534 10.5804 5.39419C10.5804 4.60304 11.187 3.95574 11.9283 3.95574H29.6522C30.0902 3.95574 30.4946 4.20747 30.7304 4.56708C31 4.92669 31.0674 5.43015 30.9326 5.86169ZM12.2652 21.325C11.6924 21.325 11.1196 21.5768 10.7152 22.0083C10.3109 22.4398 10.075 23.0512 10.075 23.6625C10.075 24.2739 10.3109 24.8852 10.7152 25.3167C11.1196 25.7483 11.6924 26 12.2652 26C12.838 26 13.4109 25.7483 13.8152 25.3167C14.2196 24.8852 14.4554 24.2739 14.4554 23.6625C14.4554 23.0512 14.2196 22.4398 13.8152 22.0083C13.4109 21.5768 12.838 21.325 12.2652 21.325ZM24.362 21.325C23.7891 21.325 23.2163 21.5768 22.812 22.0083C22.4076 22.4398 22.1717 23.0512 22.1717 23.6625C22.1717 24.2739 22.4076 24.8852 22.812 25.3167C23.2163 25.7483 23.7891 26 24.362 26C24.9348 26 25.5076 25.7483 25.912 25.3167C26.3163 24.8852 26.5522 24.2739 26.5522 23.6625C26.5522 23.0512 26.3163 22.4398 25.912 22.0083C25.5076 21.5768 24.9348 21.325 24.362 21.325Z"
+														fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products-main-card-item">
+										<p class="products-main-card-item__name text">База знаний</p>
+										<p class="products-main-card-item__price text"><span>15 000</span> ₽</p>
+										<div class="products-main-card__buttons">
+											<a href="#" class="products-main-card__more btn-1">узнать больше</a>
+											<button class="btn-2 products-main-card-item__cart">
+												<span>в корзину</span>
+												<svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M30.9326 5.86169L27.3272 17.9806C27.0576 18.8437 26.35 19.4191 25.5076 19.4191H11.5913C10.7826 19.4191 10.0076 18.8797 9.73804 18.0885L4.41413 2.8769H1.34783C0.606522 2.8769 0 2.2296 0 1.43845C0 0.647303 0.606522 0 1.34783 0H5.35761C5.93043 0 6.43587 0.395574 6.63804 0.970954L12.1304 16.5422H24.9348L27.7989 6.83264H11.9283C11.187 6.83264 10.5804 6.18534 10.5804 5.39419C10.5804 4.60304 11.187 3.95574 11.9283 3.95574H29.6522C30.0902 3.95574 30.4946 4.20747 30.7304 4.56708C31 4.92669 31.0674 5.43015 30.9326 5.86169ZM12.2652 21.325C11.6924 21.325 11.1196 21.5768 10.7152 22.0083C10.3109 22.4398 10.075 23.0512 10.075 23.6625C10.075 24.2739 10.3109 24.8852 10.7152 25.3167C11.1196 25.7483 11.6924 26 12.2652 26C12.838 26 13.4109 25.7483 13.8152 25.3167C14.2196 24.8852 14.4554 24.2739 14.4554 23.6625C14.4554 23.0512 14.2196 22.4398 13.8152 22.0083C13.4109 21.5768 12.838 21.325 12.2652 21.325ZM24.362 21.325C23.7891 21.325 23.2163 21.5768 22.812 22.0083C22.4076 22.4398 22.1717 23.0512 22.1717 23.6625C22.1717 24.2739 22.4076 24.8852 22.812 25.3167C23.2163 25.7483 23.7891 26 24.362 26C24.9348 26 25.5076 25.7483 25.912 25.3167C26.3163 24.8852 26.5522 24.2739 26.5522 23.6625C26.5522 23.0512 26.3163 22.4398 25.912 22.0083C25.5076 21.5768 24.9348 21.325 24.362 21.325Z"
+														fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="products-main-card-item">
+										<p class="products-main-card-item__name text">Технологии</p>
+										<p class="products-main-card-item__price text"><span>15 000</span> ₽</p>
+										<div class="products-main-card__buttons">
+											<a href="#" class="products-main-card__more btn-1">узнать больше</a>
+											<button class="btn-2 products-main-card-item__cart">
+												<span>в корзину</span>
+												<svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M30.9326 5.86169L27.3272 17.9806C27.0576 18.8437 26.35 19.4191 25.5076 19.4191H11.5913C10.7826 19.4191 10.0076 18.8797 9.73804 18.0885L4.41413 2.8769H1.34783C0.606522 2.8769 0 2.2296 0 1.43845C0 0.647303 0.606522 0 1.34783 0H5.35761C5.93043 0 6.43587 0.395574 6.63804 0.970954L12.1304 16.5422H24.9348L27.7989 6.83264H11.9283C11.187 6.83264 10.5804 6.18534 10.5804 5.39419C10.5804 4.60304 11.187 3.95574 11.9283 3.95574H29.6522C30.0902 3.95574 30.4946 4.20747 30.7304 4.56708C31 4.92669 31.0674 5.43015 30.9326 5.86169ZM12.2652 21.325C11.6924 21.325 11.1196 21.5768 10.7152 22.0083C10.3109 22.4398 10.075 23.0512 10.075 23.6625C10.075 24.2739 10.3109 24.8852 10.7152 25.3167C11.1196 25.7483 11.6924 26 12.2652 26C12.838 26 13.4109 25.7483 13.8152 25.3167C14.2196 24.8852 14.4554 24.2739 14.4554 23.6625C14.4554 23.0512 14.2196 22.4398 13.8152 22.0083C13.4109 21.5768 12.838 21.325 12.2652 21.325ZM24.362 21.325C23.7891 21.325 23.2163 21.5768 22.812 22.0083C22.4076 22.4398 22.1717 23.0512 22.1717 23.6625C22.1717 24.2739 22.4076 24.8852 22.812 25.3167C23.2163 25.7483 23.7891 26 24.362 26C24.9348 26 25.5076 25.7483 25.912 25.3167C26.3163 24.8852 26.5522 24.2739 26.5522 23.6625C26.5522 23.0512 26.3163 22.4398 25.912 22.0083C25.5076 21.5768 24.9348 21.325 24.362 21.325Z"
+														fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-main-card products-main-card_three">
+							<div class="products-main-card__left">
+								<div class="products-main-card__header">
+									<div class="products-main-card__icon box">
+										<img src="img/products/products-main/icon-3.svg" alt="иконка">
+									</div>
+									<h3 class="name">ПОСТРОЕНИЕ КОМПАНИИ в FOR<span class="color">RA</span>.<span
+											class="transf">price</span></h3>
+								</div>
+								<div class="products-main-card__text">
+									<p>Правильно составленная структура РПК – это готовый «дизайн-проект» Вашей компании, который позволит
+										создать результативную команду, и принимать верные управленческие решения для быстрого и прибыльного
+										развития Вашей компании</p>
+								</div>
+							</div>
+							<div class="products-main-card__right">
+								<a href="#" class="products-main-card__more btn-1">узнать больше</a>
+								<button class="btn-2 products-main-card__cart">
+									<span>добавить в корзину</span>
+									<svg width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M30.9326 5.86169L27.3272 17.9806C27.0576 18.8437 26.35 19.4191 25.5076 19.4191H11.5913C10.7826 19.4191 10.0076 18.8797 9.73804 18.0885L4.41413 2.8769H1.34783C0.606522 2.8769 0 2.2296 0 1.43845C0 0.647303 0.606522 0 1.34783 0H5.35761C5.93043 0 6.43587 0.395574 6.63804 0.970954L12.1304 16.5422H24.9348L27.7989 6.83264H11.9283C11.187 6.83264 10.5804 6.18534 10.5804 5.39419C10.5804 4.60304 11.187 3.95574 11.9283 3.95574H29.6522C30.0902 3.95574 30.4946 4.20747 30.7304 4.56708C31 4.92669 31.0674 5.43015 30.9326 5.86169ZM12.2652 21.325C11.6924 21.325 11.1196 21.5768 10.7152 22.0083C10.3109 22.4398 10.075 23.0512 10.075 23.6625C10.075 24.2739 10.3109 24.8852 10.7152 25.3167C11.1196 25.7483 11.6924 26 12.2652 26C12.838 26 13.4109 25.7483 13.8152 25.3167C14.2196 24.8852 14.4554 24.2739 14.4554 23.6625C14.4554 23.0512 14.2196 22.4398 13.8152 22.0083C13.4109 21.5768 12.838 21.325 12.2652 21.325ZM24.362 21.325C23.7891 21.325 23.2163 21.5768 22.812 22.0083C22.4076 22.4398 22.1717 23.0512 22.1717 23.6625C22.1717 24.2739 22.4076 24.8852 22.812 25.3167C23.2163 25.7483 23.7891 26 24.362 26C24.9348 26 25.5076 25.7483 25.912 25.3167C26.3163 24.8852 26.5522 24.2739 26.5522 23.6625C26.5522 23.0512 26.3163 22.4398 25.912 22.0083C25.5076 21.5768 24.9348 21.325 24.362 21.325Z"
+											fill="white" />
+									</svg>
+								</button>
+								<p class="products-main-card__price"><span>50 000</span> ₽</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ТАРИФЫ И ЦЕНЫ (блок убран) -->
+		<!-- <section class="prices products-prices">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="prices__block">
+							<div class="prices__right">
+								<div class="prices__header">
+									<h2 class="section-title">Наши продукты и услуги выгоднее покупать вместе!</h2>
+									<div class="prices__text text">
+										<p>Выбери конфигурацию FORRA.price и получи максимальную скидку!</p>
+									</div>
+								</div>
+								<div class="prices__content">
+									<div class="prices__items">
+										<div class="prices-item">
+											<p class="prices-item__name">Основной модуль</p>
+											<div class="prices-item__elements">
+												<div class="prices-item__wrapper">
+													<div class="prices-item__shop_wrapper">
+														<button class="prices-item__shop">
+															<svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M35.9217 6.76348L31.7348 20.7469C31.4217 21.7427 30.6 22.4066 29.6217 22.4066H13.4609C12.5217 22.4066 11.6217 21.7842 11.3087 20.8714L5.12609 3.3195H1.56522C0.704348 3.3195 0 2.57261 0 1.65975C0 0.746888 0.704348 0 1.56522 0H6.22174C6.88696 0 7.47391 0.456431 7.7087 1.12033L14.087 19.0871H28.9565L32.2826 7.88382H13.8522C12.9913 7.88382 12.287 7.13693 12.287 6.22407C12.287 5.3112 12.9913 4.56431 13.8522 4.56431H34.4348C34.9435 4.56431 35.413 4.85477 35.687 5.26971C36 5.68465 36.0783 6.26556 35.9217 6.76348ZM14.2435 24.6058C13.5783 24.6058 12.913 24.8963 12.4435 25.3942C11.9739 25.8921 11.7 26.5975 11.7 27.3029C11.7 28.0083 11.9739 28.7137 12.4435 29.2116C12.913 29.7095 13.5783 30 14.2435 30C14.9087 30 15.5739 29.7095 16.0435 29.2116C16.513 28.7137 16.787 28.0083 16.787 27.3029C16.787 26.5975 16.513 25.8921 16.0435 25.3942C15.5739 24.8963 14.9087 24.6058 14.2435 24.6058ZM28.2913 24.6058C27.6261 24.6058 26.9609 24.8963 26.4913 25.3942C26.0217 25.8921 25.7478 26.5975 25.7478 27.3029C25.7478 28.0083 26.0217 28.7137 26.4913 29.2116C26.9609 29.7095 27.6261 30 28.2913 30C28.9565 30 29.6217 29.7095 30.0913 29.2116C30.5609 28.7137 30.8348 28.0083 30.8348 27.3029C30.8348 26.5975 30.5609 25.8921 30.0913 25.3942C29.6217 24.8963 28.9565 24.6058 28.2913 24.6058Z"
+																	fill="white" />
+															</svg>
+														</button>
+														<button class="prices-item__btn" type="button" data-bs-toggle="collapse"
+															data-bs-target="#module-1" aria-expanded="false" aria-controls="collapseExample">
+															<p>FORRA.price</p>
+															<span class="prices-item__group">
+																<span class="prices-item__arrow">
+																	<svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+																		xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M1.11049 6.09818C-1.26175 3.8478 0.418364 0 3.77322 0L18.2268 0C21.5816 0 23.2618 3.8478 20.8895 6.09818L13.6627 12.9537C12.1921 14.3488 9.80785 14.3488 8.33727 12.9537L1.11049 6.09818Z"
+																			fill="#D9000F" />
+																	</svg>
+																</span>
+															</span>
+														</button>
+													</div>
+													<div class="collapse" id="module-1">
+														<div class="prices-item__desc">
+															<p>
+																Увеличит производительность Вашей компании за счет четкой системы финансового учета,
+																грамотного формирования цен, прозрачной аналитики, планирования производственного
+																процесса, расчета сдельных оплат и оптимизации постоянных затрат.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="prices-item">
+											<p class="prices-item__name">Дополнительные модули</p>
+											<div class="prices-item__elements">
+												<div class="prices-item__wrapper">
+													<div class="prices-item__shop_wrapper">
+														<button class="prices-item__shop">
+															<svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M35.9217 6.76348L31.7348 20.7469C31.4217 21.7427 30.6 22.4066 29.6217 22.4066H13.4609C12.5217 22.4066 11.6217 21.7842 11.3087 20.8714L5.12609 3.3195H1.56522C0.704348 3.3195 0 2.57261 0 1.65975C0 0.746888 0.704348 0 1.56522 0H6.22174C6.88696 0 7.47391 0.456431 7.7087 1.12033L14.087 19.0871H28.9565L32.2826 7.88382H13.8522C12.9913 7.88382 12.287 7.13693 12.287 6.22407C12.287 5.3112 12.9913 4.56431 13.8522 4.56431H34.4348C34.9435 4.56431 35.413 4.85477 35.687 5.26971C36 5.68465 36.0783 6.26556 35.9217 6.76348ZM14.2435 24.6058C13.5783 24.6058 12.913 24.8963 12.4435 25.3942C11.9739 25.8921 11.7 26.5975 11.7 27.3029C11.7 28.0083 11.9739 28.7137 12.4435 29.2116C12.913 29.7095 13.5783 30 14.2435 30C14.9087 30 15.5739 29.7095 16.0435 29.2116C16.513 28.7137 16.787 28.0083 16.787 27.3029C16.787 26.5975 16.513 25.8921 16.0435 25.3942C15.5739 24.8963 14.9087 24.6058 14.2435 24.6058ZM28.2913 24.6058C27.6261 24.6058 26.9609 24.8963 26.4913 25.3942C26.0217 25.8921 25.7478 26.5975 25.7478 27.3029C25.7478 28.0083 26.0217 28.7137 26.4913 29.2116C26.9609 29.7095 27.6261 30 28.2913 30C28.9565 30 29.6217 29.7095 30.0913 29.2116C30.5609 28.7137 30.8348 28.0083 30.8348 27.3029C30.8348 26.5975 30.5609 25.8921 30.0913 25.3942C29.6217 24.8963 28.9565 24.6058 28.2913 24.6058Z"
+																	fill="white" />
+															</svg>
+														</button>
+														<button class="prices-item__btn" type="button" data-bs-toggle="collapse"
+															data-bs-target="#module-2" aria-expanded="false" aria-controls="collapseExample">
+															<p>База знаний</p>
+															<span class="prices-item__group">
+
+																<span class="prices-item__arrow">
+																	<svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+																		xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M1.11049 6.09818C-1.26175 3.8478 0.418364 0 3.77322 0L18.2268 0C21.5816 0 23.2618 3.8478 20.8895 6.09818L13.6627 12.9537C12.1921 14.3488 9.80785 14.3488 8.33727 12.9537L1.11049 6.09818Z"
+																			fill="#D9000F" />
+																	</svg>
+																</span>
+															</span>
+														</button>
+													</div>
+
+													<div class="collapse" id="module-2">
+														<div class="prices-item__desc">
+															<p>
+																Увеличит производительность Вашей компании за счет четкой системы финансового учета,
+																грамотного формирования цен, прозрачной аналитики, планирования производственного
+																процесса, расчета сдельных оплат и оптимизации постоянных затрат.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="prices-item__wrapper">
+													<div class="prices-item__shop_wrapper">
+														<button class="prices-item__shop">
+															<svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M35.9217 6.76348L31.7348 20.7469C31.4217 21.7427 30.6 22.4066 29.6217 22.4066H13.4609C12.5217 22.4066 11.6217 21.7842 11.3087 20.8714L5.12609 3.3195H1.56522C0.704348 3.3195 0 2.57261 0 1.65975C0 0.746888 0.704348 0 1.56522 0H6.22174C6.88696 0 7.47391 0.456431 7.7087 1.12033L14.087 19.0871H28.9565L32.2826 7.88382H13.8522C12.9913 7.88382 12.287 7.13693 12.287 6.22407C12.287 5.3112 12.9913 4.56431 13.8522 4.56431H34.4348C34.9435 4.56431 35.413 4.85477 35.687 5.26971C36 5.68465 36.0783 6.26556 35.9217 6.76348ZM14.2435 24.6058C13.5783 24.6058 12.913 24.8963 12.4435 25.3942C11.9739 25.8921 11.7 26.5975 11.7 27.3029C11.7 28.0083 11.9739 28.7137 12.4435 29.2116C12.913 29.7095 13.5783 30 14.2435 30C14.9087 30 15.5739 29.7095 16.0435 29.2116C16.513 28.7137 16.787 28.0083 16.787 27.3029C16.787 26.5975 16.513 25.8921 16.0435 25.3942C15.5739 24.8963 14.9087 24.6058 14.2435 24.6058ZM28.2913 24.6058C27.6261 24.6058 26.9609 24.8963 26.4913 25.3942C26.0217 25.8921 25.7478 26.5975 25.7478 27.3029C25.7478 28.0083 26.0217 28.7137 26.4913 29.2116C26.9609 29.7095 27.6261 30 28.2913 30C28.9565 30 29.6217 29.7095 30.0913 29.2116C30.5609 28.7137 30.8348 28.0083 30.8348 27.3029C30.8348 26.5975 30.5609 25.8921 30.0913 25.3942C29.6217 24.8963 28.9565 24.6058 28.2913 24.6058Z"
+																	fill="white" />
+															</svg>
+															</и>
+															<button class="prices-item__btn" type="button" data-bs-toggle="collapse"
+																data-bs-target="#module-3" aria-expanded="false" aria-controls="collapseExample">
+																<p>Технологии</p>
+																<span class="prices-item__group">
+
+																	<span class="prices-item__arrow">
+																		<svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path
+																				d="M1.11049 6.09818C-1.26175 3.8478 0.418364 0 3.77322 0L18.2268 0C21.5816 0 23.2618 3.8478 20.8895 6.09818L13.6627 12.9537C12.1921 14.3488 9.80785 14.3488 8.33727 12.9537L1.11049 6.09818Z"
+																				fill="#D9000F" />
+																		</svg>
+																	</span>
+																</span>
+															</button>
+													</div>
+													<div class="collapse" id="module-3">
+														<div class="prices-item__desc">
+															<p>
+																Увеличит производительность Вашей компании за счет четкой системы финансового учета,
+																грамотного формирования цен, прозрачной аналитики, планирования производственного
+																процесса, расчета сдельных оплат и оптимизации постоянных затрат.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="prices-item__wrapper">
+													<div class="prices-item__shop_wrapper">
+														<button class="prices-item__shop">
+															<svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M35.9217 6.76348L31.7348 20.7469C31.4217 21.7427 30.6 22.4066 29.6217 22.4066H13.4609C12.5217 22.4066 11.6217 21.7842 11.3087 20.8714L5.12609 3.3195H1.56522C0.704348 3.3195 0 2.57261 0 1.65975C0 0.746888 0.704348 0 1.56522 0H6.22174C6.88696 0 7.47391 0.456431 7.7087 1.12033L14.087 19.0871H28.9565L32.2826 7.88382H13.8522C12.9913 7.88382 12.287 7.13693 12.287 6.22407C12.287 5.3112 12.9913 4.56431 13.8522 4.56431H34.4348C34.9435 4.56431 35.413 4.85477 35.687 5.26971C36 5.68465 36.0783 6.26556 35.9217 6.76348ZM14.2435 24.6058C13.5783 24.6058 12.913 24.8963 12.4435 25.3942C11.9739 25.8921 11.7 26.5975 11.7 27.3029C11.7 28.0083 11.9739 28.7137 12.4435 29.2116C12.913 29.7095 13.5783 30 14.2435 30C14.9087 30 15.5739 29.7095 16.0435 29.2116C16.513 28.7137 16.787 28.0083 16.787 27.3029C16.787 26.5975 16.513 25.8921 16.0435 25.3942C15.5739 24.8963 14.9087 24.6058 14.2435 24.6058ZM28.2913 24.6058C27.6261 24.6058 26.9609 24.8963 26.4913 25.3942C26.0217 25.8921 25.7478 26.5975 25.7478 27.3029C25.7478 28.0083 26.0217 28.7137 26.4913 29.2116C26.9609 29.7095 27.6261 30 28.2913 30C28.9565 30 29.6217 29.7095 30.0913 29.2116C30.5609 28.7137 30.8348 28.0083 30.8348 27.3029C30.8348 26.5975 30.5609 25.8921 30.0913 25.3942C29.6217 24.8963 28.9565 24.6058 28.2913 24.6058Z"
+																	fill="white" />
+															</svg>
+														</button>
+														<button class="prices-item__btn" type="button" data-bs-toggle="collapse"
+															data-bs-target="#module-4" aria-expanded="false" aria-controls="collapseExample">
+															<p>Продажи</p>
+															<span class="prices-item__group">
+
+																<span class="prices-item__arrow">
+																	<svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+																		xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M1.11049 6.09818C-1.26175 3.8478 0.418364 0 3.77322 0L18.2268 0C21.5816 0 23.2618 3.8478 20.8895 6.09818L13.6627 12.9537C12.1921 14.3488 9.80785 14.3488 8.33727 12.9537L1.11049 6.09818Z"
+																			fill="#D9000F" />
+																	</svg>
+																</span>
+															</span>
+														</button>
+													</div>
+													<div class="collapse" id="module-4">
+														<div class="prices-item__desc">
+															<p>
+																Увеличит производительность Вашей компании за счет четкой системы финансового учета,
+																грамотного формирования цен, прозрачной аналитики, планирования производственного
+																процесса, расчета сдельных оплат и оптимизации постоянных затрат.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="prices-item__wrapper">
+													<div class="prices-item__shop_wrapper">
+														<button class="prices-item__shop">
+															<svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M35.9217 6.76348L31.7348 20.7469C31.4217 21.7427 30.6 22.4066 29.6217 22.4066H13.4609C12.5217 22.4066 11.6217 21.7842 11.3087 20.8714L5.12609 3.3195H1.56522C0.704348 3.3195 0 2.57261 0 1.65975C0 0.746888 0.704348 0 1.56522 0H6.22174C6.88696 0 7.47391 0.456431 7.7087 1.12033L14.087 19.0871H28.9565L32.2826 7.88382H13.8522C12.9913 7.88382 12.287 7.13693 12.287 6.22407C12.287 5.3112 12.9913 4.56431 13.8522 4.56431H34.4348C34.9435 4.56431 35.413 4.85477 35.687 5.26971C36 5.68465 36.0783 6.26556 35.9217 6.76348ZM14.2435 24.6058C13.5783 24.6058 12.913 24.8963 12.4435 25.3942C11.9739 25.8921 11.7 26.5975 11.7 27.3029C11.7 28.0083 11.9739 28.7137 12.4435 29.2116C12.913 29.7095 13.5783 30 14.2435 30C14.9087 30 15.5739 29.7095 16.0435 29.2116C16.513 28.7137 16.787 28.0083 16.787 27.3029C16.787 26.5975 16.513 25.8921 16.0435 25.3942C15.5739 24.8963 14.9087 24.6058 14.2435 24.6058ZM28.2913 24.6058C27.6261 24.6058 26.9609 24.8963 26.4913 25.3942C26.0217 25.8921 25.7478 26.5975 25.7478 27.3029C25.7478 28.0083 26.0217 28.7137 26.4913 29.2116C26.9609 29.7095 27.6261 30 28.2913 30C28.9565 30 29.6217 29.7095 30.0913 29.2116C30.5609 28.7137 30.8348 28.0083 30.8348 27.3029C30.8348 26.5975 30.5609 25.8921 30.0913 25.3942C29.6217 24.8963 28.9565 24.6058 28.2913 24.6058Z"
+																	fill="white" />
+															</svg>
+														</button>
+														<button class="prices-item__btn" type="button" data-bs-toggle="collapse"
+															data-bs-target="#module-5" aria-expanded="false" aria-controls="collapseExample">
+															<p>Структура РПК</p>
+															<span class="prices-item__group">
+
+																<span class="prices-item__arrow">
+																	<svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+																		xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M1.11049 6.09818C-1.26175 3.8478 0.418364 0 3.77322 0L18.2268 0C21.5816 0 23.2618 3.8478 20.8895 6.09818L13.6627 12.9537C12.1921 14.3488 9.80785 14.3488 8.33727 12.9537L1.11049 6.09818Z"
+																			fill="#D9000F" />
+																	</svg>
+																</span>
+															</span>
+														</button>
+													</div>
+													<div class="collapse" id="module-5">
+														<div class="prices-item__desc">
+															<p>
+																Увеличит производительность Вашей компании за счет четкой системы финансового учета,
+																грамотного формирования цен, прозрачной аналитики, планирования производственного
+																процесса, расчета сдельных оплат и оптимизации постоянных затрат.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="prices-shop">
+										<div class="prices-shop__group">
+											<div class="prices-shop__name">
+												<div class="prices-shop__icon">
+													<svg width="36" height="30" viewBox="0 0 36 30" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M35.9217 6.76348L31.7348 20.7469C31.4217 21.7427 30.6 22.4066 29.6217 22.4066H13.4609C12.5217 22.4066 11.6217 21.7842 11.3087 20.8714L5.12609 3.3195H1.56522C0.704348 3.3195 0 2.57261 0 1.65975C0 0.746888 0.704348 0 1.56522 0H6.22174C6.88696 0 7.47391 0.456431 7.7087 1.12033L14.087 19.0871H28.9565L32.2826 7.88382H13.8522C12.9913 7.88382 12.287 7.13693 12.287 6.22407C12.287 5.3112 12.9913 4.56431 13.8522 4.56431H34.4348C34.9435 4.56431 35.413 4.85477 35.687 5.26971C36 5.68465 36.0783 6.26556 35.9217 6.76348ZM14.2435 24.6058C13.5783 24.6058 12.913 24.8963 12.4435 25.3942C11.9739 25.8921 11.7 26.5975 11.7 27.3029C11.7 28.0083 11.9739 28.7137 12.4435 29.2116C12.913 29.7095 13.5783 30 14.2435 30C14.9087 30 15.5739 29.7095 16.0435 29.2116C16.513 28.7137 16.787 28.0083 16.787 27.3029C16.787 26.5975 16.513 25.8921 16.0435 25.3942C15.5739 24.8963 14.9087 24.6058 14.2435 24.6058ZM28.2913 24.6058C27.6261 24.6058 26.9609 24.8963 26.4913 25.3942C26.0217 25.8921 25.7478 26.5975 25.7478 27.3029C25.7478 28.0083 26.0217 28.7137 26.4913 29.2116C26.9609 29.7095 27.6261 30 28.2913 30C28.9565 30 29.6217 29.7095 30.0913 29.2116C30.5609 28.7137 30.8348 28.0083 30.8348 27.3029C30.8348 26.5975 30.5609 25.8921 30.0913 25.3942C29.6217 24.8963 28.9565 24.6058 28.2913 24.6058Z"
+															fill="#D9000F" />
+													</svg>
+												</div>
+												<p class="prices-shop__title">Ваш заказ</p>
+											</div>
+											<ul class="prices-shop-list">
+												<li>База знаний</li>
+												<li>Структура рпк</li>
+											</ul>
+										</div>
+										<div class="prices-shop__group">
+											<p class="prices-shop__title">стоимость</p>
+											<div class="prices-shop__price">
+												<p class="prices-shop__num old">100 000 ₽</p>
+												<p class="prices-shop__num">90 000 ₽</p>
+											</div>
+										</div>
+										<div class="prices-shop__group">
+											<div class="prices-shop__saving">
+												<p class="prices-shop__title">ваша экономия</p>
+												<p class="prices-shop__num">10 000 ₽</p>
+											</div>
+											<button class="btn-1 prices-shop__btn">оформить заказ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- ГЕОГРАФИЯ ПОЛЬЗОВАТЕЛЕЙ -->
+		<section class="geography">
+			<div class="container">
+				<div class="geography__block">
+					<div class="geography__content">
+						<h2 class="section-title">ГЕОГРАФИЯ наших
+							ПОЛЬЗОВАТЕЛЕЙ</h2>
+						<div class="geography__slider">
+							<div class="geography__slide">
+								<div class="geography__logo">
+									<img src="img/geography/logo-1.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-2.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-3.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-4.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-5.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-6.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-7.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-8.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-9.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-10.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-11.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-12.png" alt="лого">
+								</div>
+							</div>
+							<div class="geography__slide">
+								<div class="geography__logo">
+									<img src="img/geography/logo-1.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-2.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-3.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-4.png" alt="лого">
+								</div>
+							</div>
+							<div class="geography__slide">
+								<div class="geography__logo">
+									<img src="img/geography/logo-1.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-2.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-3.png" alt="лого">
+								</div>
+								<div class="geography__logo">
+									<img src="img/geography/logo-4.png" alt="лого">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="geography__map box">
+						<img src="img/geography/map-image.png" alt="карта">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="order d-flex flex-column">
+
+			<!-- Вопросы и ответы -->
+			<section class="faq order-sm-1 order-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="section-title">Вопросы и ответы</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="accordion" id="accordionFaq">
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#question-1" aria-expanded="true" aria-controls="question-1">
+											Что я получаю при покупке продукта от Forra?
+										</button>
+									</h2>
+									<div id="question-1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+										<div class="accordion-body">
+											<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+												информации, подготовленной нашими специалистами, а так же возможность редактировать информацию
+												по
+												своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#question-2" aria-expanded="false" aria-controls="question-2">
+											Что я получаю при покупке продукта от Forra?
+										</button>
+									</h2>
+									<div id="question-2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+										<div class="accordion-body">
+											<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+												информации, подготовленной нашими специалистами, а так же возможность редактировать информацию
+												по
+												своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#question-3" aria-expanded="false" aria-controls="question-3">
+											Что я получаю при покупке продукта от Forra?
+										</button>
+									</h2>
+									<div id="question-3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+										<div class="accordion-body">
+											<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+												информации, подготовленной нашими специалистами, а так же возможность редактировать информацию
+												по
+												своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#question-4" aria-expanded="false" aria-controls="question-4">
+											Что я получаю при покупке продукта от Forra?
+										</button>
+									</h2>
+									<div id="question-4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+										<div class="accordion-body">
+											<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+												информации, подготовленной нашими специалистами, а так же возможность редактировать информацию
+												по
+												своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#question-5" aria-expanded="false" aria-controls="question-5">
+											Что я получаю при покупке продукта от Forra?
+										</button>
+									</h2>
+									<div id="question-5" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+										<div class="accordion-body">
+											<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+												информации, подготовленной нашими специалистами, а так же возможность редактировать информацию
+												по
+												своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#question-6" aria-expanded="false" aria-controls="question-6">
+											Что я получаю при покупке продукта от Forra?
+										</button>
+									</h2>
+									<div id="question-6" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+										<div class="accordion-body">
+											<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+												информации, подготовленной нашими специалистами, а так же возможность редактировать информацию
+												по
+												своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Хотите узнать больше о FORRA.price? -->
+			<section class="form-tour form-tour-two order-sm-2 order-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="form-tour__block">
+								<div class="form-tour__left">
+									<p class="form-tour__title">ХОТИТЕ БОЛЬШЕ УЗНАТЬ О НАШИХ ТОВАРАХ И УСЛУГАХ?</p>
+									<div class="form-tour__text text">
+										<p>Запишитесь на онлайн-экскурсию в эко-систему FORRA.price!</p>
+									</div>
+								</div>
+								<div class="form-tour__right">
+									<div class="form-tour__form">
+										<div class="form-tour__inputs">
+											<input type="text" class="form-tour__input input" placeholder="имя">
+											<input type="text" class="form-tour__input input" placeholder="телефон">
+											<input type="text" class="form-tour__input input" placeholder="e-mail">
+										</div>
+										<div class="form-tour__send">
+											<div class="form-tour__calendar">
+												<input type="text" class="input form-tour__input" id="datepicker" placeholder="Выберите дату">
+											</div>
+											<div class="form-tour__bottom">
+												<button type="submit" class="btn-1 form-tour__btn">записаться на экскурсию</button>
+												<p class="form-tour__privacy">нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- ВАМ МОГУТ БЫТЬ ПОЛЕЗНЫ -->
+		<section class="useful-products">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="useful-products__header">
+							<h2 class="section-title">ВАМ МОГУТ БЫТЬ ПОЛЕЗНЫ</h2>
+							<div class="useful-products__arrows slick-arrows">
+								<button class="slick-prev slick-arrow useful-products__slider-prev" aria-label="Previous" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+								<button class="slick-next slick-arrow useful-products__slider-next" aria-label="Next" type="button">
+									<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="useful-products__slider">
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-1.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">База знаний</h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-2.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">Продажи</h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-3.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">Структура РПК</h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-4.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">FOR<span class="color">RA</span>.<span class="transf">price</span></h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-1.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">База знаний</h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-2.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">Продажи</h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-3.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">Структура РПК</h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="useful-products__slide">
+								<div class="useful-products__image box">
+									<img src="img/useful-products/image-4.jpg" alt="фото">
+								</div>
+								<div class="useful-products__info">
+									<h4 class="item-name">FOR<span class="color">RA</span>.<span class="transf">price</span></h4>
+									<div class="useful-products__text">
+										<p>Помогут увеличить производительность Вашей компании, настроить систему учета, ...</p>
+									</div>
+									<button class="btn-1 useful-products__btn">
+										<span>добавить в корзину</span>
+										<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M23.9478 4.50899L21.1565 13.8313C20.9478 14.4952 20.4 14.9378 19.7478 14.9378H8.97391C8.34783 14.9378 7.74783 14.5228 7.53913 13.9142L3.41739 2.213H1.04348C0.469565 2.213 0 1.71508 0 1.1065C0 0.497925 0.469565 0 1.04348 0H4.14783C4.5913 0 4.98261 0.304288 5.13913 0.746888L9.3913 12.7248H19.3043L21.5217 5.25588H9.23478C8.66087 5.25588 8.1913 4.75795 8.1913 4.14938C8.1913 3.5408 8.66087 3.04288 9.23478 3.04288H22.9565C23.2957 3.04288 23.6087 3.23651 23.7913 3.51314C24 3.78976 24.0522 4.17704 23.9478 4.50899ZM9.49565 16.4039C9.05217 16.4039 8.6087 16.5975 8.29565 16.9295C7.98261 17.2614 7.8 17.7317 7.8 18.2019C7.8 18.6722 7.98261 19.1425 8.29565 19.4744C8.6087 19.8064 9.05217 20 9.49565 20C9.93913 20 10.3826 19.8064 10.6957 19.4744C11.0087 19.1425 11.1913 18.6722 11.1913 18.2019C11.1913 17.7317 11.0087 17.2614 10.6957 16.9295C10.3826 16.5975 9.93913 16.4039 9.49565 16.4039ZM18.8609 16.4039C18.4174 16.4039 17.9739 16.5975 17.6609 16.9295C17.3478 17.2614 17.1652 17.7317 17.1652 18.2019C17.1652 18.6722 17.3478 19.1425 17.6609 19.4744C17.9739 19.8064 18.4174 20 18.8609 20C19.3043 20 19.7478 19.8064 20.0609 19.4744C20.3739 19.1425 20.5565 18.6722 20.5565 18.2019C20.5565 17.7317 20.3739 17.2614 20.0609 16.9295C19.7478 16.5975 19.3043 16.4039 18.8609 16.4039Z"
+												fill="white" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__block">
+						<div class="footer__top">
+							<a href="#" class="footer__logo">
+								<img src="img/header/logo.png" alt="лого">
+							</a>
+							<div class="footer__group">
+								<a href="tel:88004567819" class="footer__link footer__phone">
+									<span class="footer__icon">
+										<img src="img/footer/phone-icon.svg" alt="телефон">
+									</span>
+									<p>8 800 456 78 19</p>
+								</a>
+								<a href="mailto:forrainfo@mail.ru" class="footer__link footer__mail">
+									<span class="footer__icon">
+										<img src="img/footer/mail-icon.svg" alt="почта">
+									</span>
+									<p>forrainfo@mail.ru</p>
+								</a>
+							</div>
+							<div class="footer__socials">
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/vk.svg" alt="вконтакте">
+								</a>
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/tg.svg" alt="телеграм">
+								</a>
+							</div>
+							<div class="footer__text">
+								<p>Весь контент принадлежит: ИП Ржавитин А.С., ИНН 583519379849</p>
+								<p>Фотографии, видеоматериалы и тексты, представленные на этом сайте, предназначены для ознакомления,
+									пожалуйста, не используйте их в коммерческих целях.</p>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__links">
+								<a href="#" target="_blank" class="footer__oferta">Публичная оферта</a>
+								<a href="#" target="_blank" class="footer__oferta">Политика конфиденциальности</a>
+								<a href="#" target="_blank" class="footer__oferta">Согласие на рассылку</a>
+							</div>
+							<a href="#" target="_blank" class="footer__founder">
+								<span>Разработано</span>
+								<img src="img/footer/founder-logo.svg" alt="eleven lab">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

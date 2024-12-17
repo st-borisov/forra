@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- шапка -->
+	<nav class="navbar" id="header">
+		<div class="container">
+			<div class="navbar__wrapper">
+				<a class="navbar-brand" href="#">
+					<img src="img/header/logo.png" alt="лого forra">
+				</a>
+				<div class="navbar__right">
+					<ul class="navbar-nav align-items-center flex-row">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Академия</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Основатель</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Продукты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Цены</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Магазин</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+					<a href="tel:88004567819" class="navbar-phone d-lg-none">8 800 456 78 19</a>
+					<button class="navbar-burger d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#burger"
+						aria-controls="offcanvasExample">
+						<svg width="63" height="15" viewBox="0 0 63 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.6216 7.5C13.6216 11.366 10.5723 14.5 6.81081 14.5C3.0493 14.5 0 11.366 0 7.5C0 3.63401 3.0493 0.5 6.81081 0.5C10.5723 0.5 13.6216 3.63401 13.6216 7.5Z"
+								fill="black" />
+							<path
+								d="M38.3108 7.5C38.3108 11.366 35.2615 14.5 31.5 14.5C27.7385 14.5 24.6892 11.366 24.6892 7.5C24.6892 3.63401 27.7385 0.5 31.5 0.5C35.2615 0.5 38.3108 3.63401 38.3108 7.5Z"
+								fill="black" />
+							<path
+								d="M63 7.5C63 11.366 59.9507 14.5 56.1892 14.5C52.4277 14.5 49.3784 11.366 49.3784 7.5C49.3784 3.63401 52.4277 0.5 56.1892 0.5C59.9507 0.5 63 3.63401 63 7.5Z"
+								fill="black" />
+						</svg>
+					</button>
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="burger" aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<button type="button" class="navbar-offcanvas__close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+								<svg width="20" height="33" viewBox="0 0 20 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L17 16.5L2 31" stroke="white" stroke-width="3" />
+								</svg>
+							</button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Академию</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Про Основателя</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Продукты и услуги</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Тарифы и цены</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Новости</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+							<div class="navbar-offcanvas__contacts">
+								<a href="tel:88004567819" class="navbar-offcanvas__phone">8 800 456 78 19</a>
+								<p class="navbar-offcanvas__address">Пенза, ул. Терновского 220, к. 4</p>
+							</div>
+							<a href="#" class="navbar-offcanvas__btn">связаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+		<nav aria-label="breadcrumb" class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Об академии</li>
+				</ol>
+			</div>
+		</nav>
+
+		<section class="about-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="about-main__block">
+							<div class="about-main__wrapper">
+								<div class="about-main__left">
+									<div class="about-main__top">
+										<h1 class="section-title">FOR<span class="color">RA</span>. Новый уровень развития — новый уровень
+											прибыли</h1>
+										<a href="#" class="btn-1 about-main__btn">
+											Прокачать компанию
+										</a>
+									</div>
+								</div>
+								<div class="about-main__right">
+									<div class="about-main__image box">
+										<img src="img/about/about-main/image.jpg" alt="фото">
+									</div>
+								</div>
+							</div>
+							<div class="about-main__bottom">
+								<h2 class="section-title">КТО МЫ?</h2>
+								<div class="about-main__text">
+									<p>Мы — Академия развития рекламного бизнеса, которая предоставляет готовые, легко адаптируемые и
+										быстро внедряемые инструменты для организации эффективной и прибыльной работы рекламного
+										производства.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- НАША МИССИЯ -->
+		<section class="about-mission">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="about-mission__block">
+							<div class="about-mission__left">
+								<div class="about-mission__content">
+									<h2 class="section-title">НАША МИССИЯ</h2>
+									<div class="about-mission__text">
+										<p>Выделить рекламно-производственную отрасль в отдельный культурный бизнес-сегмент, повысив уровень
+											значимости рекламного бизнеса в России. Формируя культуру обмена опытом, развивать и
+											совершенствовать бизнес-процессы, обучать сотрудников, чтобы превратить рекламное ремесло в
+											современное и прибыльное производство.</p>
+									</div>
+								</div>
+							</div>
+							<div class="about-mission__right">
+								<div class="about-mission__image box">
+									<img src="img/about/about-mission/image.jpg" alt="фото">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ДЛЯ КОГО МЫ РАБОТАЕМ? -->
+		<section class="about-clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="about-clients__block">
+							<div class="about-clients__content">
+								<h2 class="section-title">ДЛЯ КОГО МЫ РАБОТАЕМ?</h2>
+								<p class="item-name about-clients__sub">Для владельцев рекламных компаний, цель которых:</p>
+								<div class="about-clients__table">
+									<ul class="about-clients__column">
+										<li>Сделать свою компанию максимально эффективной и прибыльной</li>
+										<li>Масштабировать свой рекламный бизнес и вывести его на новый качественный уровень
+											профессионализма
+											и сервиса</li>
+										<li>Полностью избавиться от проблем с производственным браком и типовыми ошибками сотрудников</li>
+									</ul>
+									<ul class="about-clients__column">
+										<li>Быстро нанимать и обучать новых продуктивных сотрудников</li>
+										<li>Создать надежную систему, чтобы их бизнес работал эффективно, а не как попало</li>
+										<li>Создать эстетику внешнего вида города, в котором они ведут свою деятельность</li>
+									</ul>
+								</div>
+							</div>
+							<div class="about-clients__box">
+								<div class="about-clients__image box">
+									<img src="img/about/about-clients/image.png" alt="фото">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- В ЧЕМ НАША СИЛА? -->
+		<section class="about-benefits">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="about-benefits__block">
+							<div class="about-benefits__items">
+								<div class="about-benefits__item">
+									<div class="about-benefits__box">
+										<div class="about-benefits__image box">
+											<img src="img/about/about-benefits/image-1.jpg" alt="фото">
+										</div>
+									</div>
+									<div class="about-benefits__content">
+										<div class="about-benefits__header">
+											<h2 class="section-title">В ЧЕМ НАША СИЛА?</h2>
+										</div>
+										<ul class="about-benefits__list">
+											<li>Большой опыт работы в производстве наружной рекламы</li>
+											<li>Искреннее желание делиться практическими знаниями с коллегами</li>
+											<li>Проверка всех обучающих материалов на собственной РПК</li>
+											<li>Тестирование процессов на практике и выбор только успешных вариантов</li>
+											<li>Обучение у владельцев крупнейших РПК России</li>
+											<li>Обучение у лучших мировых бизнес-тренеров</li>
+											<li>Стремление к постоянному развитию рекламного бизнеса</li>
+											<li>Подход в формате H2H (человек для человека)</li>
+											<li>Высокая степень заботы. Открытость и честность</li>
+										</ul>
+									</div>
+								</div>
+								<div class="about-benefits__item">
+									<div class="about-benefits__box">
+										<div class="about-benefits__image box">
+											<img src="img/about/about-benefits/image-2.jpg" alt="фото">
+										</div>
+									</div>
+									<div class="about-benefits__content">
+										<div class="about-benefits__header">
+											<h2 class="section-title">КАК МЫ РАЗВИВАЕМСЯ?</h2>
+										</div>
+										<ul class="about-benefits__list">
+											<li>Постоянно анализируем рекламный рынок, чтобы давать представителям отрасли лучшие решения</li>
+											<li>Регулярно посещаем крупнейшие РПК России и общаемся с их владельцами, чтобы проанализировать
+												успех
+												лидеров рынка и выделить важные детали</li>
+											<li>Оцифровываем успешные бизнес-процессы и создаем отраслевые стандарты</li>
+											<li>Думаем о мелочах и нюансах, важных для начинающих и опытных представителей рекламной отрасли
+											</li>
+											<li>Рекомендуем только необходимые инструменты для повышения эффективности рекламного бизнеса</li>
+											<li>Создаем и развиваем медиа-каналы, помогающие представителям рекламной отрасли общаться с
+												коллегами
+												и получать новые идеи для развития</li>
+											<li>Формируем индивидуальный подход к развитию каждого представителя рекламной индустрии, для
+												наиболее
+												эффективного роста</li>
+											<li>Работаем с партнерами, лично мотивируя их проходить все этапы обучения и добиваться результата
+											</li>
+											<li>Постоянно ищем способы, чтобы прокачать свою экспертность</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Вопросы и ответы -->
+		<section class="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="section-title">НАШИ КОМПЕТЕНЦИИ</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="accordion" id="accordionFaq">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-1"
+										aria-expanded="true" aria-controls="question-1">
+										Аналитика рекламного бизнеса
+									</button>
+								</h2>
+								<div id="question-1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+									<div class="accordion-body">
+										<ul>
+											<li>Выявление текущих проблем в работе РПК</li>
+											<li>Ревизия бизнес-процессов РПК</li>
+											<li>Разработка программы рекомендаций на основе полученных данных</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#question-2" aria-expanded="false" aria-controls="question-2">
+										Мотивация сотрудников РПК
+									</button>
+								</h2>
+								<div id="question-2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+									<div class="accordion-body">
+										<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+											информации, подготовленной нашими специалистами, а так же возможность редактировать информацию по
+											своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#question-3" aria-expanded="false" aria-controls="question-3">
+										Консалтинг для руководителей РПК
+									</button>
+								</h2>
+								<div id="question-3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+									<div class="accordion-body">
+										<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+											информации, подготовленной нашими специалистами, а так же возможность редактировать информацию по
+											своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#question-4" aria-expanded="false" aria-controls="question-4">
+										Обучение и аттестация сотрудников РПК
+									</button>
+								</h2>
+								<div id="question-4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+									<div class="accordion-body">
+										<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+											информации, подготовленной нашими специалистами, а так же возможность редактировать информацию по
+											своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#question-5" aria-expanded="false" aria-controls="question-5">
+										Построение РПК
+									</button>
+								</h2>
+								<div id="question-5" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+									<div class="accordion-body">
+										<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+											информации, подготовленной нашими специалистами, а так же возможность редактировать информацию по
+											своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#question-6" aria-expanded="false" aria-controls="question-6">
+										Производство в РПК
+									</button>
+								</h2>
+								<div id="question-6" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+									<div class="accordion-body">
+										<p>В зависимости от того, какой продукт вы покупаете, вам предоставляется безлимитный доступ к
+											информации, подготовленной нашими специалистами, а так же возможность редактировать информацию по
+											своему усмотрению и проведение тренингов для ваших коллег по обновленным методичкам.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Галерея -->
+		<section class="gallery-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="gallery-block__wrapper">
+							<h2 class="section-title">Галерея</h2>
+							<div class="gallery-block__slider_wrapper">
+								<div class="gallery-block__slider swiper">
+									<div class="swiper-wrapper">
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-1.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-1.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+										<div class="gallery-block__slide swiper-slide">
+											<img src="img/news-item/slider-image-2.jpg" alt="фото">
+										</div>
+									</div>
+									<div class="news-item__arrows slick-arrows">
+										<button class="slick-next slick-arrow news-item__slider-next swiper-button-next">
+											<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+											</svg>
+										</button>
+										<button class="slick-prev slick-arrow news-item__slider-prev swiper-button-prev">
+											<svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 27L2.36041e-06 -1.83588e-06L21 13.5L0 27Z" fill="white" />
+											</svg>
+										</button>
+									</div>
+									<div class="swiper-pagination news-item-slider-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Хотите узнать больше о FORRA.price? -->
+		<section class="form-tour form-tour-two">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="form-tour__block">
+							<div class="form-tour__left">
+								<p class="form-tour__title">Хотите быстро увеличить прибыль Вашей РПК?</p>
+								<div class="form-tour__text text">
+									<p>Запишитесь на персональную консультацию с Антоном Ржавитиным</p>
+								</div>
+							</div>
+							<div class="form-tour__right">
+								<div class="form-tour__form">
+									<div class="form-tour__inputs">
+										<input type="text" class="form-tour__input input" placeholder="имя">
+										<input type="text" class="form-tour__input input" placeholder="телефон">
+										<input type="text" class="form-tour__input input" placeholder="e-mail">
+									</div>
+									<div class="form-tour__send">
+										<div class="form-select__wrapper">
+											<select class="form-select" name="theme">
+												<option value=""></option>
+												<option value="AL">тема 1</option>
+												<option value="WY">тема 2</option>
+												<option value="AL">тема 3</option>
+												<option value="WY">тема 4</option>
+											</select>
+										</div>
+										<div class="form-tour__calendar">
+											<input type="text" class="input form-tour__input" id="datepicker" placeholder="Выберите дату">
+										</div>
+										<div class="form-tour__bottom">
+											<button type="submit" class="btn-1 form-tour__btn">Записаться на консультацию</button>
+											<div class="shopping-cart-form__privacy">
+												<div class="checkbox">
+													<input class="custom-checkbox" type="checkbox" id="remember" name="remember" value="remember"
+														checked>
+													<label for="remember">Я соглашаюсь на обработку<br> персональных данных</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer__block">
+						<div class="footer__top">
+							<a href="#" class="footer__logo">
+								<img src="img/header/logo.png" alt="лого">
+							</a>
+							<div class="footer__group">
+								<a href="tel:88004567819" class="footer__link footer__phone">
+									<span class="footer__icon">
+										<img src="img/footer/phone-icon.svg" alt="телефон">
+									</span>
+									<p>8 800 456 78 19</p>
+								</a>
+								<a href="mailto:forrainfo@mail.ru" class="footer__link footer__mail">
+									<span class="footer__icon">
+										<img src="img/footer/mail-icon.svg" alt="почта">
+									</span>
+									<p>forrainfo@mail.ru</p>
+								</a>
+							</div>
+							<div class="footer__socials">
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/vk.svg" alt="вконтакте">
+								</a>
+								<a href="#" target="_blank" class="footer__social">
+									<img src="img/contacts/tg.svg" alt="телеграм">
+								</a>
+							</div>
+							<div class="footer__text">
+								<p>Весь контент принадлежит: ИП Ржавитин А.С., ИНН 583519379849</p>
+								<p>Фотографии, видеоматериалы и тексты, представленные на этом сайте, предназначены для ознакомления,
+									пожалуйста, не используйте их в коммерческих целях.</p>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__links">
+								<a href="#" target="_blank" class="footer__oferta">Публичная оферта</a>
+								<a href="#" target="_blank" class="footer__oferta">Политика конфиденциальности</a>
+								<a href="#" target="_blank" class="footer__oferta">Согласие на рассылку</a>
+							</div>
+							<a href="#" target="_blank" class="footer__founder">
+								<span>Разработано</span>
+								<img src="img/footer/founder-logo.svg" alt="eleven lab">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.gallery-block__slider', {
+			// Optional parameters
+			loop: true,
+			speed: 800,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			breakpoints: {
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 34,
+				},
+
+				0: {
+					slidesPerView: 1.2,
+					spaceBetween: 16,
+				},
+			}
+
+		});
+	</script>
+</body>
+
+</html>
